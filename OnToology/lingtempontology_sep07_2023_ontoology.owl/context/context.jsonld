@@ -1,0 +1,193 @@
+{
+  "@context" : {
+    "temperature_tactile" : {
+      "@id" : "http://example.com/ontology/temperature_tactile"
+    },
+    "hasTemperatureSystemCentralityValue" : {
+      "@id" : "http://example.com/ontology/hasTemperatureSystemCentralityValue",
+      "@type" : "@id"
+    },
+    "TemperatureSystemCentral" : {
+      "@id" : "http://example.com/ontology/TemperatureSystemCentral"
+    },
+    "temperature_water" : {
+      "@id" : "http://example.com/ontology/temperature_water"
+    },
+    "PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented" : {
+      "@id" : "http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented"
+    },
+    "TemperatureScaleTypeWarmth" : {
+      "@id" : "http://example.com/ontology/TemperatureScaleTypeWarmth"
+    },
+    "temperature_ambient" : {
+      "@id" : "http://example.com/ontology/temperature_ambient"
+    },
+    "temperature_air" : {
+      "@id" : "http://example.com/ontology/temperature_air"
+    },
+    "PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented" : {
+      "@id" : "http://example.com/ontology/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented"
+    },
+    "TemperatureScaleType" : {
+      "@id" : "http://example.com/ontology/TemperatureScaleType"
+    },
+    "hasPersFeelingConstruction" : {
+      "@id" : "http://example.com/ontology/hasPersFeelingConstruction",
+      "@type" : "@id"
+    },
+    "partOfTemperatureSystem" : {
+      "@id" : "http://example.com/ontology/partOfTemperatureSystem",
+      "@type" : "@id"
+    },
+    "Example" : {
+      "@id" : "http://example.com/ontology/Example"
+    },
+    "isLessWarmThan" : {
+      "@id" : "http://example.com/ontology/isLessWarmThan",
+      "@type" : "@id"
+    },
+    "isMoreWarmThan" : {
+      "@id" : "http://example.com/ontology/isMoreWarmThan",
+      "@type" : "@id"
+    },
+    "isLessColdThan" : {
+      "@id" : "http://example.com/ontology/isLessColdThan",
+      "@type" : "@id"
+    },
+    "PersFeelingConstruction_Other" : {
+      "@id" : "http://example.com/ontology/PersFeelingConstruction_Other"
+    },
+    "minCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#minCardinality"
+    },
+    "hasDerivation" : {
+      "@id" : "http://example.com/ontology/hasDerivation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SemanticDomain" : {
+      "@id" : "http://example.com/ontology/SemanticDomain"
+    },
+    "StateVerbPOS" : {
+      "@id" : "http://example.com/ontology/StateVerbPOS"
+    },
+    "class" : {
+      "@id" : "http://www.w3.org/2002/07/owl#class"
+    },
+    "hasComment" : {
+      "@id" : "http://example.com/ontology/hasComment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "maxCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#maxCardinality"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "TemperatureSystemPeripheral" : {
+      "@id" : "http://example.com/ontology/TemperatureSystemPeripheral"
+    },
+    "hasSemanticDomain" : {
+      "@id" : "http://example.com/ontology/hasSemanticDomain",
+      "@type" : "@id"
+    },
+    "temperature_personalfeeling" : {
+      "@id" : "http://example.com/ontology/temperature_personalfeeling"
+    },
+    "temperature_ambient_QR" : {
+      "@id" : "http://example.com/ontology/temperature_ambient_QR"
+    },
+    "hasSemanticBasicnessStatus" : {
+      "@id" : "http://example.com/ontology/hasSemanticBasicnessStatus"
+    },
+    "OtherPOS" : {
+      "@id" : "http://example.com/ontology/OtherPOS"
+    },
+    "temperature_ambient_NR" : {
+      "@id" : "http://example.com/ontology/temperature_ambient_NR"
+    },
+    "existsInExample" : {
+      "@id" : "http://example.com/ontology/existsInExample",
+      "@type" : "@id"
+    },
+    "hasTranslation" : {
+      "@id" : "http://example.com/ontology/hasTranslation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "TemperatureScaleTypeColdness" : {
+      "@id" : "http://example.com/ontology/TemperatureScaleTypeColdness"
+    },
+    "PersFeelingConstruction" : {
+      "@id" : "http://example.com/ontology/PersFeelingConstruction"
+    },
+    "hasExampleText" : {
+      "@id" : "http://example.com/ontology/hasExampleText"
+    },
+    "PersFeelingConstruction_IntransitiveStrategy_NonOriented" : {
+      "@id" : "http://example.com/ontology/PersFeelingConstruction_IntransitiveStrategy_NonOriented"
+    },
+    "PersFeelingConstruction_TransitiveStrategy_NonOriented" : {
+      "@id" : "http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_NonOriented"
+    },
+    "hasWarmHotCollapse" : {
+      "@id" : "http://example.com/ontology/hasWarmHotCollapse",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "TemperatureLexeme" : {
+      "@id" : "http://example.com/ontology/TemperatureLexeme"
+    },
+    "hasNumberOfCentralSystemTerms" : {
+      "@id" : "http://example.com/ontology/hasNumberOfCentralSystemTerms",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "PartOfSpeech" : {
+      "@id" : "http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"
+    },
+    "hasExampleID" : {
+      "@id" : "http://example.com/ontology/hasExampleID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isMOreWarmThan" : {
+      "@id" : "http://example.com/ontology/isMOreWarmThan"
+    },
+    "hasTemperatureScaleType" : {
+      "@id" : "http://example.com/ontology/hasTemperatureScaleType"
+    },
+    "PersFeelingConstruction_TransitiveStrategy_ExpertumOriented" : {
+      "@id" : "http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.0/title"
+    },
+    "isMoreColdThan" : {
+      "@id" : "http://example.com/ontology/isMoreColdThan",
+      "@type" : "@id"
+    },
+    "temperature_general" : {
+      "@id" : "http://example.com/ontology/temperature_general"
+    },
+    "Language" : {
+      "@id" : "http://dbpedia.org/resource/Language"
+    },
+    "hasLanguage" : {
+      "@id" : "http://example.com/ontology/hasLanguage",
+      "@type" : "@id"
+    },
+    "partOfSpeech" : {
+      "@id" : "http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.0/description"
+    },
+    "containsWord" : {
+      "@id" : "http://example.com/ontology/containsWord",
+      "@type" : "@id"
+    },
+    "TemperatureSystem" : {
+      "@id" : "http://example.com/ontology/TemperatureSystem"
+    },
+    "hasAdditionalTerms" : {
+      "@id" : "http://example.com/ontology/hasAdditionalTerms"
+    }
+  }
+}

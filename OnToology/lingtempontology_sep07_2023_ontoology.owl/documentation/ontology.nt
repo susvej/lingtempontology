@@ -1,0 +1,635 @@
+<http://www.example.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.example.org> <http://purl.org/dc/elements/1.0/description> "An ontology for capturing cross-linguistic temperature terms and their meanings." .
+<http://www.example.org> <http://purl.org/dc/elements/1.0/title> "The Linguistics of Temperature Terms Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://example.com/ontology/hasAdditionalTerms
+<http://example.com/ontology/hasAdditionalTerms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://example.com/ontology/hasAdditionalTerms> <http://www.w3.org/2000/01/rdf-schema#label> "hasAdditionalTerms" .
+<http://example.com/ontology/hasAdditionalTerms> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.com/ontology/hasAdditionalTerms> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureSystem> .
+# 
+# http://example.com/ontology/hasExampleText
+<http://example.com/ontology/hasExampleText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://example.com/ontology/isMOreWarmThan
+<http://example.com/ontology/isMOreWarmThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.0/description
+<http://purl.org/dc/elements/1.0/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.0/title
+<http://purl.org/dc/elements/1.0/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#maxCardinality
+<http://www.w3.org/2002/07/owl#maxCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#minCardinality
+<http://www.w3.org/2002/07/owl#minCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://example.com/ontology/containsWord
+<http://example.com/ontology/containsWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontology/containsWord> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.com/ontology/existsInExample> .
+<http://example.com/ontology/containsWord> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/Example> .
+<http://example.com/ontology/containsWord> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontology/TemperatureLexeme> .
+# 
+# http://example.com/ontology/existsInExample
+<http://example.com/ontology/existsInExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontology/existsInExample> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/existsInExample> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontology/Example> .
+# 
+# http://example.com/ontology/hasLanguage
+<http://example.com/ontology/hasLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontology/hasLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/hasLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Language> .
+<http://dbpedia.org/resource/Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontology/hasLanguage> <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://example.com/ontology/hasPersFeelingConstruction
+<http://example.com/ontology/hasPersFeelingConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontology/hasPersFeelingConstruction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/hasPersFeelingConstruction> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontology/PersFeelingConstruction> .
+<http://example.com/ontology/PersFeelingConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/hasSemanticDomain
+<http://example.com/ontology/hasSemanticDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontology/hasSemanticDomain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/hasSemanticDomain> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontology/SemanticDomain> .
+# 
+# http://example.com/ontology/hasTemperatureScaleType
+<http://example.com/ontology/hasTemperatureScaleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontology/hasTemperatureScaleType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/hasTemperatureScaleType> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontology/TemperatureScaleType> .
+# 
+# http://example.com/ontology/hasTemperatureSystemCentralityValue
+<http://example.com/ontology/hasTemperatureSystemCentralityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontology/hasTemperatureSystemCentralityValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/hasTemperatureSystemCentralityValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://example.com/ontology/TemperatureSystemPeripheral> .
+<http://example.com/ontology/TemperatureSystemPeripheral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://example.com/ontology/TemperatureSystemCentral> .
+<http://example.com/ontology/TemperatureSystemCentral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://example.com/ontology/hasTemperatureSystemCentralityValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasTemperatureSystemCentralityValue" .
+# 
+# http://example.com/ontology/isLessColdThan
+<http://example.com/ontology/isLessColdThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontology/isLessColdThan> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.com/ontology/isMoreColdThan> .
+<http://example.com/ontology/isLessColdThan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/isLessColdThan> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontology/TemperatureLexeme> .
+# 
+# http://example.com/ontology/isLessWarmThan
+<http://example.com/ontology/isLessWarmThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontology/isLessWarmThan> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.com/ontology/isMoreWarmThan> .
+<http://example.com/ontology/isLessWarmThan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/isLessWarmThan> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontology/TemperatureLexeme> .
+# 
+# http://example.com/ontology/isMoreColdThan
+<http://example.com/ontology/isMoreColdThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontology/isMoreColdThan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/isMoreColdThan> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontology/TemperatureLexeme> .
+# 
+# http://example.com/ontology/isMoreWarmThan
+<http://example.com/ontology/isMoreWarmThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontology/isMoreWarmThan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/isMoreWarmThan> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontology/TemperatureLexeme> .
+# 
+# http://example.com/ontology/partOfTemperatureSystem
+<http://example.com/ontology/partOfTemperatureSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontology/partOfTemperatureSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/partOfTemperatureSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontology/TemperatureSystem> .
+# 
+# http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech
+<http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech> .
+<http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://example.com/ontology/hasComment
+<http://example.com/ontology/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontology/hasComment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/hasComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontology/hasDerivation
+<http://example.com/ontology/hasDerivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontology/hasDerivation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/hasDerivation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontology/hasExampleID
+<http://example.com/ontology/hasExampleID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontology/hasExampleID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/Example> .
+<http://example.com/ontology/hasExampleID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontology/hasNumberOfCentralSystemTerms
+<http://example.com/ontology/hasNumberOfCentralSystemTerms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontology/hasNumberOfCentralSystemTerms> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/hasNumberOfCentralSystemTerms> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.com/ontology/hasNumberOfCentralSystemTerms> <http://www.w3.org/2000/01/rdf-schema#label> "hasNumberOfCentralSystemTerms" .
+# 
+# http://example.com/ontology/hasSemanticBasicnessStatus
+<http://example.com/ontology/hasSemanticBasicnessStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontology/hasSemanticBasicnessStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/hasSemanticBasicnessStatus> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#oneOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "yes" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "unknown" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "no" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://example.com/ontology/hasTemperatureScaleType
+<http://example.com/ontology/hasTemperatureScaleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://example.com/ontology/hasTranslation
+<http://example.com/ontology/hasTranslation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontology/hasTranslation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/Example> .
+<http://example.com/ontology/hasTranslation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontology/hasWarmHotCollapse
+<http://example.com/ontology/hasWarmHotCollapse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontology/hasWarmHotCollapse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/hasWarmHotCollapse> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.com/ontology/hasWarmHotCollapse> <http://www.w3.org/2000/01/rdf-schema#label> "hasWarmHotCollapse" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/resource/Language
+# 
+# http://example.com/ontology/Example
+<http://example.com/ontology/Example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/OtherPOS
+<http://example.com/ontology/OtherPOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontology/OtherPOS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech> .
+<http://example.com/ontology/OtherPOS> <http://www.w3.org/2000/01/rdf-schema#label> "OtherPOS" .
+# 
+# http://example.com/ontology/PersFeelingConstruction
+# 
+# http://example.com/ontology/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented
+<http://example.com/ontology/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/PersFeelingConstruction_IntransitiveStrategy_NonOriented
+<http://example.com/ontology/PersFeelingConstruction_IntransitiveStrategy_NonOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/PersFeelingConstruction_Other
+<http://example.com/ontology/PersFeelingConstruction_Other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented
+<http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented
+<http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_NonOriented
+<http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_NonOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/SemanticDomain
+<http://example.com/ontology/SemanticDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/StateVerbPOS
+<http://example.com/ontology/StateVerbPOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontology/StateVerbPOS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech> .
+<http://example.com/ontology/StateVerbPOS> <http://www.w3.org/2000/01/rdf-schema#label> "StateVerbPOS" .
+# 
+# http://example.com/ontology/TemperatureLexeme
+<http://example.com/ontology/TemperatureLexeme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontology/TemperatureLexeme> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature Lexeme" .
+# 
+# http://example.com/ontology/TemperatureScaleType
+<http://example.com/ontology/TemperatureScaleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/TemperatureScaleTypeColdness
+<http://example.com/ontology/TemperatureScaleTypeColdness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/TemperatureScaleTypeWarmth
+<http://example.com/ontology/TemperatureScaleTypeWarmth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/TemperatureSystem
+<http://example.com/ontology/TemperatureSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/TemperatureSystemCentral
+# 
+# http://example.com/ontology/TemperatureSystemPeripheral
+# 
+# http://example.com/ontology/hasComment
+<http://example.com/ontology/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/temperature_air
+<http://example.com/ontology/temperature_air> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/temperature_ambient
+<http://example.com/ontology/temperature_ambient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/temperature_ambient_NR
+<http://example.com/ontology/temperature_ambient_NR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/temperature_ambient_QR
+<http://example.com/ontology/temperature_ambient_QR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/temperature_general
+<http://example.com/ontology/temperature_general> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/temperature_personalfeeling
+<http://example.com/ontology/temperature_personalfeeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/temperature_tactile
+<http://example.com/ontology/temperature_tactile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontology/temperature_water
+<http://example.com/ontology/temperature_water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech
+# 
+# http://www.w3.org/2002/07/owl#class
+<http://www.w3.org/2002/07/owl#class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/resource/English
+<http://dbpedia.org/resource/English> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://dbpedia.org/resource/Swedish
+<http://dbpedia.org/resource/Swedish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://example.com/ontology/PersFeelingConstruction
+<http://example.com/ontology/PersFeelingConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/PersFeelingConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#class> .
+# 
+# http://example.com/ontology/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented
+<http://example.com/ontology/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/PersFeelingConstruction> .
+# 
+# http://example.com/ontology/PersFeelingConstruction_IntransitiveStrategy_NonOriented
+<http://example.com/ontology/PersFeelingConstruction_IntransitiveStrategy_NonOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/PersFeelingConstruction_IntransitiveStrategy_NonOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/PersFeelingConstruction> .
+# 
+# http://example.com/ontology/PersFeelingConstruction_Other
+<http://example.com/ontology/PersFeelingConstruction_Other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/PersFeelingConstruction_Other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/PersFeelingConstruction> .
+# 
+# http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented
+<http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/PersFeelingConstruction> .
+# 
+# http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented
+<http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/PersFeelingConstruction> .
+# 
+# http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_NonOriented
+<http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_NonOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/PersFeelingConstruction_TransitiveStrategy_NonOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/PersFeelingConstruction> .
+# 
+# http://example.com/ontology/TemperatureScaleTypeColdness
+<http://example.com/ontology/TemperatureScaleTypeColdness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/TemperatureScaleTypeColdness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureScaleType> .
+# 
+# http://example.com/ontology/TemperatureScaleTypeNeutral
+<http://example.com/ontology/TemperatureScaleTypeNeutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://example.com/ontology/TemperatureScaleTypeWarmth
+<http://example.com/ontology/TemperatureScaleTypeWarmth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/TemperatureScaleTypeWarmth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureScaleType> .
+# 
+# http://example.com/ontology/TemperatureSystem
+<http://example.com/ontology/TemperatureSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://example.com/ontology/cold
+<http://example.com/ontology/cold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/cold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/cold> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/English> .
+<http://example.com/ontology/cold> <http://example.com/ontology/hasSemanticDomain> <http://example.com/ontology/temperature_general> .
+<http://example.com/ontology/temperature_general> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/cold> <http://example.com/ontology/hasTemperatureScaleType> <http://example.com/ontology/TemperatureScaleTypeColdness> .
+<http://example.com/ontology/cold> <http://example.com/ontology/isMoreColdThan> <http://example.com/ontology/cool> .
+<http://example.com/ontology/cool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/cold> <http://example.com/ontology/partOfTemperatureSystem> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/cold> <http://example.com/ontology/hasSemanticBasicnessStatus> "yes" .
+<http://example.com/ontology/cold> <http://www.w3.org/2000/01/rdf-schema#label> "cold" .
+# 
+# http://example.com/ontology/cool
+<http://example.com/ontology/cool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/cool> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/English> .
+<http://example.com/ontology/cool> <http://example.com/ontology/hasSemanticDomain> <http://example.com/ontology/temperature_general> .
+<http://example.com/ontology/cool> <http://example.com/ontology/hasTemperatureScaleType> <http://example.com/ontology/TemperatureScaleTypeColdness> .
+<http://example.com/ontology/cool> <http://example.com/ontology/isLessColdThan> <http://example.com/ontology/cold> .
+<http://example.com/ontology/cool> <http://example.com/ontology/isMoreColdThan> <http://example.com/ontology/lukewarm> .
+<http://example.com/ontology/lukewarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/cool> <http://example.com/ontology/partOfTemperatureSystem> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/cool> <http://example.com/ontology/hasSemanticBasicnessStatus> "yes" .
+<http://example.com/ontology/cool> <http://www.w3.org/2000/01/rdf-schema#label> "cool" .
+# 
+# http://example.com/ontology/eng_Example1
+<http://example.com/ontology/eng_Example1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/eng_Example1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/Example> .
+<http://example.com/ontology/eng_Example1> <http://example.com/ontology/containsWord> <http://example.com/ontology/hot> .
+<http://example.com/ontology/hot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/eng_Example1> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/English> .
+<http://example.com/ontology/eng_Example1> <http://example.com/ontology/hasExampleID> "eng_example1" .
+<http://example.com/ontology/eng_Example1> <http://example.com/ontology/hasExampleText> "It's very hot outside." .
+# 
+# http://example.com/ontology/eng_Example2
+<http://example.com/ontology/eng_Example2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/eng_Example2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/Example> .
+<http://example.com/ontology/eng_Example2> <http://example.com/ontology/containsWord> <http://example.com/ontology/warm> .
+<http://example.com/ontology/warm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/eng_Example2> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/English> .
+<http://example.com/ontology/eng_Example2> <http://example.com/ontology/hasExampleID> "eng_example2" .
+<http://example.com/ontology/eng_Example2> <http://example.com/ontology/hasExampleText> "The water is warm." .
+# 
+# http://example.com/ontology/eng_Example3
+<http://example.com/ontology/eng_Example3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/eng_Example3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/Example> .
+<http://example.com/ontology/eng_Example3> <http://example.com/ontology/containsWord> <http://example.com/ontology/lukewarm> .
+<http://example.com/ontology/eng_Example3> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/English> .
+<http://example.com/ontology/eng_Example3> <http://example.com/ontology/hasExampleID> "eng_example3" .
+<http://example.com/ontology/eng_Example3> <http://example.com/ontology/hasExampleText> "The tea is lukewarm." .
+# 
+# http://example.com/ontology/eng_Example4
+<http://example.com/ontology/eng_Example4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/eng_Example4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/Example> .
+<http://example.com/ontology/eng_Example4> <http://example.com/ontology/containsWord> <http://example.com/ontology/cool> .
+<http://example.com/ontology/eng_Example4> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/English> .
+<http://example.com/ontology/eng_Example4> <http://example.com/ontology/hasExampleID> "eng_example4" .
+<http://example.com/ontology/eng_Example4> <http://example.com/ontology/hasExampleText> "The weather is cool." .
+# 
+# http://example.com/ontology/eng_Example5
+<http://example.com/ontology/eng_Example5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/eng_Example5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/Example> .
+<http://example.com/ontology/eng_Example5> <http://example.com/ontology/containsWord> <http://example.com/ontology/cold> .
+<http://example.com/ontology/eng_Example5> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/English> .
+<http://example.com/ontology/eng_Example5> <http://example.com/ontology/hasExampleID> "eng_example5" .
+<http://example.com/ontology/eng_Example5> <http://example.com/ontology/hasExampleText> "It's freezing cold outside." .
+# 
+# http://example.com/ontology/hasComment
+<http://example.com/ontology/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/hasComment> .
+# 
+# http://example.com/ontology/het
+<http://example.com/ontology/het> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/het> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/het> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<http://example.com/ontology/het> <http://example.com/ontology/hasSemanticDomain> <http://example.com/ontology/temperature_general> .
+<http://example.com/ontology/het> <http://example.com/ontology/hasTemperatureScaleType> <http://example.com/ontology/TemperatureScaleTypeWarmth> .
+<http://example.com/ontology/het> <http://example.com/ontology/partOfTemperatureSystem> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/het> <http://example.com/ontology/hasComment> "anything that is covered by ex:het is also covered by ex:varm, but some instances of thermal activity can be ex:varm but not ex:het, since ex:het requires a very hot state" .
+<http://example.com/ontology/het> <http://example.com/ontology/hasSemanticBasicnessStatus> "yes" .
+<http://example.com/ontology/het> <http://example.com/ontology/isMOreWarmThan> <http://example.com/ontology/varm> .
+<http://example.com/ontology/het> <http://www.w3.org/2000/01/rdf-schema#label> "het" .
+# 
+# http://example.com/ontology/hot
+<http://example.com/ontology/hot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/hot> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/English> .
+<http://example.com/ontology/hot> <http://example.com/ontology/hasSemanticDomain> <http://example.com/ontology/temperature_general> .
+<http://example.com/ontology/hot> <http://example.com/ontology/hasTemperatureScaleType> <http://example.com/ontology/TemperatureScaleTypeWarmth> .
+<http://example.com/ontology/hot> <http://example.com/ontology/isMoreWarmThan> <http://example.com/ontology/warm> .
+<http://example.com/ontology/hot> <http://example.com/ontology/partOfTemperatureSystem> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/hot> <http://example.com/ontology/hasSemanticBasicnessStatus> "yes" .
+<http://example.com/ontology/hot> <http://www.w3.org/2000/01/rdf-schema#label> "hot" .
+# 
+# http://example.com/ontology/kall
+<http://example.com/ontology/kall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/kall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/kall> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<http://example.com/ontology/kall> <http://example.com/ontology/hasSemanticDomain> <http://example.com/ontology/temperature_general> .
+<http://example.com/ontology/kall> <http://example.com/ontology/hasTemperatureScaleType> <http://example.com/ontology/TemperatureScaleTypeColdness> .
+<http://example.com/ontology/kall> <http://example.com/ontology/isMoreColdThan> <http://example.com/ontology/kylig> .
+<http://example.com/ontology/kylig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/kall> <http://example.com/ontology/isMoreColdThan> <http://example.com/ontology/sval> .
+<http://example.com/ontology/sval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/kall> <http://example.com/ontology/partOfTemperatureSystem> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/kall> <http://example.com/ontology/hasComment> "TBA" .
+<http://example.com/ontology/kall> <http://example.com/ontology/hasSemanticBasicnessStatus> "yes" .
+<http://example.com/ontology/kall> <http://www.w3.org/2000/01/rdf-schema#label> "kall" .
+# 
+# http://example.com/ontology/kylig
+<http://example.com/ontology/kylig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/kylig> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<http://example.com/ontology/kylig> <http://example.com/ontology/hasSemanticDomain> <http://example.com/ontology/temperature_air> .
+<http://example.com/ontology/temperature_air> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/kylig> <http://example.com/ontology/hasTemperatureScaleType> <http://example.com/ontology/TemperatureScaleTypeColdness> .
+<http://example.com/ontology/kylig> <http://example.com/ontology/isLessColdThan> <http://example.com/ontology/kall> .
+<http://example.com/ontology/kylig> <http://example.com/ontology/isMoreColdThan> <http://example.com/ontology/ljummen> .
+<http://example.com/ontology/ljummen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/kylig> <http://example.com/ontology/partOfTemperatureSystem> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/kylig> <http://example.com/ontology/hasComment> "ex:sval has a positive connotation, as opposed to ex:kylig which has a neutral to negative connotation." .
+<http://example.com/ontology/kylig> <http://example.com/ontology/hasSemanticBasicnessStatus> "yes" .
+<http://example.com/ontology/kylig> <http://www.w3.org/2000/01/rdf-schema#label> "kylig" .
+# 
+# http://example.com/ontology/ljummen
+<http://example.com/ontology/ljummen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/ljummen> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/English> .
+<http://example.com/ontology/ljummen> <http://example.com/ontology/hasSemanticDomain> <http://example.com/ontology/temperature_air> .
+<http://example.com/ontology/ljummen> <http://example.com/ontology/hasSemanticDomain> <http://example.com/ontology/temperature_water> .
+<http://example.com/ontology/temperature_water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/ljummen> <http://example.com/ontology/hasTemperatureScaleType> <http://example.com/ontology/TemperatureScaleTypeNeutral> .
+<http://example.com/ontology/ljummen> <http://example.com/ontology/partOfTemperatureSystem> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/ljummen> <http://example.com/ontology/hasSemanticBasicnessStatus> "yes" .
+<http://example.com/ontology/ljummen> <http://www.w3.org/2000/01/rdf-schema#label> "ljummen" .
+# 
+# http://example.com/ontology/lukewarm
+<http://example.com/ontology/lukewarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/lukewarm> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/English> .
+<http://example.com/ontology/lukewarm> <http://example.com/ontology/hasSemanticDomain> <http://example.com/ontology/temperature_general> .
+<http://example.com/ontology/lukewarm> <http://example.com/ontology/hasTemperatureScaleType> <http://example.com/ontology/TemperatureScaleTypeNeutral> .
+<http://example.com/ontology/lukewarm> <http://example.com/ontology/partOfTemperatureSystem> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/lukewarm> <http://example.com/ontology/hasSemanticBasicnessStatus> "yes" .
+<http://example.com/ontology/lukewarm> <http://www.w3.org/2000/01/rdf-schema#label> "lukewarm" .
+# 
+# http://example.com/ontology/sval
+<http://example.com/ontology/sval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/sval> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<http://example.com/ontology/sval> <http://example.com/ontology/hasSemanticDomain> <http://example.com/ontology/temperature_air> .
+<http://example.com/ontology/sval> <http://example.com/ontology/hasTemperatureScaleType> <http://example.com/ontology/TemperatureScaleTypeColdness> .
+<http://example.com/ontology/sval> <http://example.com/ontology/isLessColdThan> <http://example.com/ontology/kall> .
+<http://example.com/ontology/sval> <http://example.com/ontology/isMoreColdThan> <http://example.com/ontology/ljummen> .
+<http://example.com/ontology/sval> <http://example.com/ontology/partOfTemperatureSystem> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/sval> <http://example.com/ontology/hasComment> "ex:sval has a positive connotation, as opposed to ex:kylig which has a neutral to negative connotation" .
+<http://example.com/ontology/sval> <http://example.com/ontology/hasSemanticBasicnessStatus> "yes" .
+<http://example.com/ontology/sval> <http://www.w3.org/2000/01/rdf-schema#label> "sval" .
+# 
+# http://example.com/ontology/swe_Example1
+<http://example.com/ontology/swe_Example1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/swe_Example1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/Example> .
+<http://example.com/ontology/swe_Example1> <http://example.com/ontology/containsWord> <http://example.com/ontology/hot> .
+<http://example.com/ontology/swe_Example1> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<http://example.com/ontology/swe_Example1> <http://example.com/ontology/hasExampleID> "swe_example1" .
+<http://example.com/ontology/swe_Example1> <http://example.com/ontology/hasTranslation> "The kettle is hot when I touch it." .
+<http://example.com/ontology/swe_Example1> <http://example.com/ontology/hasExampleText> "Vattenkokaren är het när jag rör vid den" .
+# 
+# http://example.com/ontology/swe_Example2
+<http://example.com/ontology/swe_Example2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/swe_Example2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/Example> .
+<http://example.com/ontology/swe_Example2> <http://example.com/ontology/containsWord> <http://example.com/ontology/varm> .
+<http://example.com/ontology/varm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/swe_Example2> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<http://example.com/ontology/swe_Example2> <http://example.com/ontology/hasExampleID> "swe_example2" .
+<http://example.com/ontology/swe_Example2> <http://example.com/ontology/hasTranslation> "The water is warm." .
+<http://example.com/ontology/swe_Example2> <http://example.com/ontology/hasExampleText> "Vattnet är varmt." .
+# 
+# http://example.com/ontology/swe_Example3
+<http://example.com/ontology/swe_Example3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/swe_Example3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/Example> .
+<http://example.com/ontology/swe_Example3> <http://example.com/ontology/containsWord> <http://example.com/ontology/lukewarm> .
+<http://example.com/ontology/swe_Example3> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<http://example.com/ontology/swe_Example3> <http://example.com/ontology/hasExampleID> "swe_example3" .
+<http://example.com/ontology/swe_Example3> <http://example.com/ontology/hasTranslation> "A slightly warm potato salad." .
+<http://example.com/ontology/swe_Example3> <http://example.com/ontology/hasExampleText> "En ljummen potatissallad." .
+# 
+# http://example.com/ontology/swe_Example4
+<http://example.com/ontology/swe_Example4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/swe_Example4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/Example> .
+<http://example.com/ontology/swe_Example4> <http://example.com/ontology/containsWord> <http://example.com/ontology/kylig> .
+<http://example.com/ontology/swe_Example4> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<http://example.com/ontology/swe_Example4> <http://example.com/ontology/hasExampleID> "swe_example4" .
+<http://example.com/ontology/swe_Example4> <http://example.com/ontology/hasTranslation> "The room felt cool." .
+<http://example.com/ontology/swe_Example4> <http://example.com/ontology/hasExampleText> "Rummet kändes kyligt." .
+# 
+# http://example.com/ontology/swe_Example5
+<http://example.com/ontology/swe_Example5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/swe_Example5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/Example> .
+<http://example.com/ontology/swe_Example5> <http://example.com/ontology/containsWord> <http://example.com/ontology/sval> .
+<http://example.com/ontology/swe_Example5> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<http://example.com/ontology/swe_Example5> <http://example.com/ontology/hasExampleID> "swe_example5" .
+<http://example.com/ontology/swe_Example5> <http://example.com/ontology/hasTranslation> "A cool, pleasant wind cooled us down." .
+<http://example.com/ontology/swe_Example5> <http://example.com/ontology/hasExampleText> "En sval bris svalkade oss." .
+# 
+# http://example.com/ontology/swe_Example6
+<http://example.com/ontology/swe_Example6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/swe_Example6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/Example> .
+<http://example.com/ontology/swe_Example6> <http://example.com/ontology/containsWord> <http://example.com/ontology/kall> .
+<http://example.com/ontology/swe_Example6> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<http://example.com/ontology/swe_Example6> <http://example.com/ontology/hasExampleID> "swe_example6" .
+<http://example.com/ontology/swe_Example6> <http://example.com/ontology/hasTranslation> "It was cold outside." .
+<http://example.com/ontology/swe_Example6> <http://example.com/ontology/hasExampleText> "Det var kallt ute." .
+# 
+# http://example.com/ontology/temperature_air
+<http://example.com/ontology/temperature_air> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/SemanticDomain> .
+<http://example.com/ontology/temperature_air> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/ENVO_09200001> .
+<http://purl.obolibrary.org/obo/ENVO_09200001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://purl.obolibrary.org/obo/ENVO_09200001
+# 
+# http://example.com/ontology/temperature_ambient
+<http://example.com/ontology/temperature_ambient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/temperature_ambient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/SemanticDomain> .
+# 
+# http://example.com/ontology/temperature_ambient_NR
+<http://example.com/ontology/temperature_ambient_NR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/temperature_ambient_NR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/temperature_ambient> .
+# 
+# http://example.com/ontology/temperature_ambient_QR
+<http://example.com/ontology/temperature_ambient_QR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/temperature_ambient_QR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/temperature_ambient> .
+# 
+# http://example.com/ontology/temperature_general
+<http://example.com/ontology/temperature_general> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/SemanticDomain> .
+<http://example.com/ontology/temperature_general> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/PATO_0000146> .
+<http://purl.obolibrary.org/obo/PATO_0000146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://purl.obolibrary.org/obo/PATO_0000146
+# 
+# http://example.com/ontology/temperature_personalfeeling
+<http://example.com/ontology/temperature_personalfeeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/temperature_personalfeeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/SemanticDomain> .
+# 
+# http://example.com/ontology/temperature_tactile
+<http://example.com/ontology/temperature_tactile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontology/temperature_tactile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/SemanticDomain> .
+# 
+# http://example.com/ontology/temperature_water
+<http://example.com/ontology/temperature_water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/SemanticDomain> .
+<http://example.com/ontology/temperature_water> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/ENVO_09200014> .
+<http://purl.obolibrary.org/obo/ENVO_09200014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://purl.obolibrary.org/obo/ENVO_09200014
+# 
+# http://example.com/ontology/varm
+<http://example.com/ontology/varm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/varm> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<http://example.com/ontology/varm> <http://example.com/ontology/hasSemanticDomain> <http://example.com/ontology/temperature_general> .
+<http://example.com/ontology/varm> <http://example.com/ontology/hasTemperatureScaleType> <http://example.com/ontology/TemperatureScaleTypeWarmth> .
+<http://example.com/ontology/varm> <http://example.com/ontology/isLessWarmThan> <http://example.com/ontology/het> .
+<http://example.com/ontology/varm> <http://example.com/ontology/isMoreWarmThan> <http://example.com/ontology/lukewarm> .
+<http://example.com/ontology/varm> <http://example.com/ontology/hasComment> "anything that is covered by ex:het is also covered by ex:varm, but some instances of thermal activity can be ex:varm but not ex:het, since ex:het requires a very hot state" .
+<http://example.com/ontology/varm> <http://example.com/ontology/hasSemanticBasicnessStatus> "yes" .
+<http://example.com/ontology/varm> <http://example.com/ontology/partOfTemperatureSystem> " \"smith2001_1\"" .
+<http://example.com/ontology/varm> <http://www.w3.org/2000/01/rdf-schema#label> "varm" .
+# 
+# http://example.com/ontology/warm
+<http://example.com/ontology/warm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ontology/TemperatureLexeme> .
+<http://example.com/ontology/warm> <http://example.com/ontology/hasLanguage> <http://dbpedia.org/resource/English> .
+<http://example.com/ontology/warm> <http://example.com/ontology/hasSemanticDomain> <http://example.com/ontology/temperature_general> .
+<http://example.com/ontology/warm> <http://example.com/ontology/hasTemperatureScaleType> <http://example.com/ontology/TemperatureScaleTypeWarmth> .
+<http://example.com/ontology/warm> <http://example.com/ontology/isLessWarmThan> <http://example.com/ontology/warm> .
+<http://example.com/ontology/warm> <http://example.com/ontology/isMoreWarmThan> <http://example.com/ontology/lukewarm> .
+<http://example.com/ontology/warm> <http://example.com/ontology/partOfTemperatureSystem> <http://example.com/ontology/TemperatureSystem> .
+<http://example.com/ontology/warm> <http://example.com/ontology/hasSemanticBasicnessStatus> "yes" .
+<http://example.com/ontology/warm> <http://www.w3.org/2000/01/rdf-schema#label> "warm" .
+# 
+# http://purl.obolibrary.org/obo/ENVO_09200001
+# 
+# http://purl.obolibrary.org/obo/ENVO_09200014
+# 
+# http://purl.obolibrary.org/obo/PATO_0000146
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://example.com/ontology/partOfTemperatureSystem> <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
