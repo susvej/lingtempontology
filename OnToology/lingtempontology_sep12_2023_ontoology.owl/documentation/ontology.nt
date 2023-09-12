@@ -1,0 +1,664 @@
+<https://w3id.org/def/temp_ont> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/temp_ont> <http://purl.org/dc/elements/1.0/description> "An ontology for capturing cross-linguistic temperature terms and their meanings." .
+<https://w3id.org/def/temp_ont> <http://purl.org/dc/elements/1.0/title> "The Linguistics of Temperature Terms Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.0/description
+<http://purl.org/dc/elements/1.0/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.0/title
+<http://purl.org/dc/elements/1.0/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#maxCardinality
+<http://www.w3.org/2002/07/owl#maxCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#minCardinality
+<http://www.w3.org/2002/07/owl#minCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/temp_ont/hasAdditionalTerms
+<https://w3id.org/def/temp_ont/hasAdditionalTerms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/def/temp_ont/hasAdditionalTerms> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/def/temp_ont/hasExampleText
+<https://w3id.org/def/temp_ont/hasExampleText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/temp_ont/isMOreWarmThan
+<https://w3id.org/def/temp_ont/isMOreWarmThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech
+<http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech> .
+<http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines that ex:TemperatureLexeme has a partOfSpeech (note lower case p) property, importinh it from the lexinfo ontology. Very relevant subclasses of the class PartOfSpeech (note capital p) include /lexinfo#NounPOS, /lexinfo#VerbPOS, /lexinfo#AdjectivePOS" .
+# 
+# https://w3id.org/def/temp_ont/containsWord
+<https://w3id.org/def/temp_ont/containsWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/temp_ont/containsWord> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/temp_ont/existsInExample> .
+<https://w3id.org/def/temp_ont/containsWord> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/containsWord> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/containsWord> <http://www.w3.org/2000/01/rdf-schema#comment> "Examples contain word" .
+# 
+# https://w3id.org/def/temp_ont/existsInExample
+<https://w3id.org/def/temp_ont/existsInExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/temp_ont/existsInExample> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/existsInExample> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/temp_ont/Example> .
+# 
+# https://w3id.org/def/temp_ont/hasLanguage
+<https://w3id.org/def/temp_ont/hasLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/temp_ont/hasLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/LanguageObject> .
+<https://w3id.org/def/temp_ont/hasLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Language> .
+<http://dbpedia.org/resource/Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/hasLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines that ex:TemperatureLexeme have languages, and that those languages are # subclasses of http://dbpedia.org/resource/Language" .
+<https://w3id.org/def/temp_ont/hasLanguage> <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://w3id.org/def/temp_ont/hasPersFeelingConstruction
+<https://w3id.org/def/temp_ont/hasPersFeelingConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/temp_ont/hasPersFeelingConstruction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/hasPersFeelingConstruction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/temp_ont/PersFeelingConstruction> .
+<https://w3id.org/def/temp_ont/PersFeelingConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/temp_ont/hasSemanticDomain
+<https://w3id.org/def/temp_ont/hasSemanticDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/temp_ont/hasSemanticDomain> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/hasSemanticDomain> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/temp_ont/SemanticDomain> .
+# 
+# https://w3id.org/def/temp_ont/hasTemperatureScaleType
+<https://w3id.org/def/temp_ont/hasTemperatureScaleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/temp_ont/hasTemperatureScaleType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/hasTemperatureScaleType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/temp_ont/TemperatureScaleType> .
+# 
+# https://w3id.org/def/temp_ont/hasTemperatureSystemCentralityValue
+<https://w3id.org/def/temp_ont/hasTemperatureSystemCentralityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/temp_ont/hasTemperatureSystemCentralityValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/hasTemperatureSystemCentralityValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/temp_ont/TemperatureSystemPeripheral> .
+<https://w3id.org/def/temp_ont/TemperatureSystemPeripheral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/temp_ont/TemperatureSystemCentral> .
+<https://w3id.org/def/temp_ont/TemperatureSystemCentral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/def/temp_ont/hasTemperatureSystemCentralityValue> <http://www.w3.org/2000/01/rdf-schema#comment> "An important distinction is whether a temperature term is domain CENTRAL or domain PERIPHERAL" .
+<https://w3id.org/def/temp_ont/hasTemperatureSystemCentralityValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasTemperatureSystemCentralityValue" .
+# 
+# https://w3id.org/def/temp_ont/isLessColdThan
+<https://w3id.org/def/temp_ont/isLessColdThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/temp_ont/isLessColdThan> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/temp_ont/isMoreColdThan> .
+<https://w3id.org/def/temp_ont/isLessColdThan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/isLessColdThan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/isLessColdThan> <http://www.w3.org/2000/01/rdf-schema#comment> "A TemperatureLexeme also have relative temperatures to each other. # Note that the inverse relationship means we do not at first have to  # mark both relationships when we add data - a reasoner can do that  # automatically for us" .
+# 
+# https://w3id.org/def/temp_ont/isLessWarmThan
+<https://w3id.org/def/temp_ont/isLessWarmThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/temp_ont/isLessWarmThan> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/temp_ont/isMoreWarmThan> .
+<https://w3id.org/def/temp_ont/isLessWarmThan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/isLessWarmThan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/isLessWarmThan> <http://www.w3.org/2000/01/rdf-schema#comment> "A TemperatureLexeme also have relative temperatures to each other. # Note that the inverse relationship means we do not at first have to  # mark both relationships when we add data - a reasoner can do that  # automatically for us" .
+# 
+# https://w3id.org/def/temp_ont/isMoreColdThan
+<https://w3id.org/def/temp_ont/isMoreColdThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/temp_ont/isMoreColdThan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/isMoreColdThan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/isMoreColdThan> <http://www.w3.org/2000/01/rdf-schema#comment> "A TemperatureLexeme also have relative temperatures to each other. # Note that the inverse relationship means we do not at first have to  # mark both relationships when we add data - a reasoner can do that  # automatically for us" .
+# 
+# https://w3id.org/def/temp_ont/isMoreWarmThan
+<https://w3id.org/def/temp_ont/isMoreWarmThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/temp_ont/isMoreWarmThan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/isMoreWarmThan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/isMoreWarmThan> <http://www.w3.org/2000/01/rdf-schema#comment> "A TemperatureLexeme also have relative temperatures to each other. # Note that the inverse relationship means we do not at first have to  # mark both relationships when we add data - a reasoner can do that  # automatically for us" .
+# 
+# https://w3id.org/def/temp_ont/partOfTemperatureSystem
+<https://w3id.org/def/temp_ont/partOfTemperatureSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/temp_ont/partOfTemperatureSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/partOfTemperatureSystem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/temp_ont/hasAdditionalTerms
+<https://w3id.org/def/temp_ont/hasAdditionalTerms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/temp_ont/hasAdditionalTerms> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+# 
+# https://w3id.org/def/temp_ont/hasComment
+<https://w3id.org/def/temp_ont/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/temp_ont/hasComment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/hasComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/def/temp_ont/hasDerivation
+<https://w3id.org/def/temp_ont/hasDerivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/temp_ont/hasDerivation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/hasDerivation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/temp_ont/hasDerivation> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines that ex:TemperatureLexeme can be derived from some other word" .
+# 
+# https://w3id.org/def/temp_ont/hasEnglishTranslation
+<https://w3id.org/def/temp_ont/hasEnglishTranslation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/temp_ont/hasEnglishTranslation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/hasEnglishTranslation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/temp_ont/hasEnglishTranslation> <http://www.w3.org/2000/01/rdf-schema#comment> "Each example has a translation into our business language, which is English" .
+# 
+# https://w3id.org/def/temp_ont/hasExampleID
+<https://w3id.org/def/temp_ont/hasExampleID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/temp_ont/hasExampleID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/hasExampleID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/temp_ont/hasExampleID> <http://www.w3.org/2000/01/rdf-schema#comment> "Examples should have unique ids, composed by the temperature system id plus an additional unique number" .
+# 
+# https://w3id.org/def/temp_ont/hasNumberOfCentralSystemTerms
+<https://w3id.org/def/temp_ont/hasNumberOfCentralSystemTerms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/temp_ont/hasNumberOfCentralSystemTerms> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/hasNumberOfCentralSystemTerms> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/temp_ont/hasNumberOfCentralSystemTerms> <http://www.w3.org/2000/01/rdf-schema#comment> "We want to record the number of system central terms that a particular system has" .
+<https://w3id.org/def/temp_ont/hasNumberOfCentralSystemTerms> <http://www.w3.org/2000/01/rdf-schema#label> "hasNumberOfCentralSystemTerms" .
+# 
+# https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus
+<https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#oneOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "yes" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "unknown" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "no" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> <http://www.w3.org/2000/01/rdf-schema#comment> " Each TemperatureLexeme has a BasicnessStatus (is it a basic temperature term?), which can be one of yes no unknown" .
+# 
+# https://w3id.org/def/temp_ont/hasTemperatureScaleType
+<https://w3id.org/def/temp_ont/hasTemperatureScaleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/def/temp_ont/hasWarmHotCollapse
+<https://w3id.org/def/temp_ont/hasWarmHotCollapse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/temp_ont/hasWarmHotCollapse> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/hasWarmHotCollapse> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/def/temp_ont/hasWarmHotCollapse> <http://www.w3.org/2000/01/rdf-schema#comment> "An important distinction is whether a temperature system collapses two levels on the warmer scale (warm+cold in one), or if it keeps them separate (warm; cold). This can be either 1 (True, yes theere is a collapse) or 0 (False, there is no collapse)" .
+<https://w3id.org/def/temp_ont/hasWarmHotCollapse> <http://www.w3.org/2000/01/rdf-schema#label> "hasWarmHotCollapse" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/resource/Language
+# 
+# http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech
+# 
+# http://www.w3.org/2002/07/owl#class
+<http://www.w3.org/2002/07/owl#class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/temp_ont/Example
+<https://w3id.org/def/temp_ont/Example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/Example> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/LanguageObject> .
+<https://w3id.org/def/temp_ont/Example> <http://www.w3.org/2000/01/rdf-schema#comment> "Examples of temperature terms in use. Examples are languages objects, and can thus be the Subjects of the hasLanguage property" .
+# 
+# https://w3id.org/def/temp_ont/LanguageObject
+<https://w3id.org/def/temp_ont/LanguageObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/LanguageObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Words, phrases, examples, texts, are language objects" .
+<https://w3id.org/def/temp_ont/LanguageObject> <http://www.w3.org/2000/01/rdf-schema#label> "Language Object" .
+# 
+# https://w3id.org/def/temp_ont/OtherPOS
+<https://w3id.org/def/temp_ont/OtherPOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/OtherPOS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech> .
+<https://w3id.org/def/temp_ont/OtherPOS> <http://www.w3.org/2000/01/rdf-schema#comment> "For each instance of OtherPOS Consider adding to the TemperatureLexeme's rdfs:comment some text /rdfs:comment to add info on what this OtherPOS actually is" .
+<https://w3id.org/def/temp_ont/OtherPOS> <http://www.w3.org/2000/01/rdf-schema#label> "OtherPOS" .
+# 
+# https://w3id.org/def/temp_ont/PersFeelingConstruction
+# 
+# https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/PersFeelingConstruction> .
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines different kinds of  morphosyntactic constructions from p 137 in Koptjevskaja-Tamm, M. (2022). Semantic maps and temperature: Capturing the lexicon-grammar interface across languages. Zeitschrift für Sprachwissenschaft, 41(1), 125-177. https://doi.org/10.1515/zfs-2021-2042" .
+# 
+# https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_NonOriented
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_NonOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_NonOriented> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/PersFeelingConstruction> .
+# 
+# https://w3id.org/def/temp_ont/PersFeelingConstruction_Other
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_Other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_Other> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/PersFeelingConstruction> .
+# 
+# https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/PersFeelingConstruction> .
+# 
+# https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/PersFeelingConstruction> .
+# 
+# https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_NonOriented
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_NonOriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_NonOriented> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/PersFeelingConstruction> .
+# 
+# https://w3id.org/def/temp_ont/SemanticDomain
+<https://w3id.org/def/temp_ont/SemanticDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/SemanticDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines that TemperatureLexeme has a semantic domain" .
+<https://w3id.org/def/temp_ont/SemanticDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Semantic Domain" .
+# 
+# https://w3id.org/def/temp_ont/StateVerbPOS
+<https://w3id.org/def/temp_ont/StateVerbPOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/StateVerbPOS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech> .
+<https://w3id.org/def/temp_ont/StateVerbPOS> <http://www.w3.org/2000/01/rdf-schema#comment> "the lexinfo ontology does not define State verbs, nor does it have a general “other POS” option, so we add those her" .
+<https://w3id.org/def/temp_ont/StateVerbPOS> <http://www.w3.org/2000/01/rdf-schema#label> "StateVerbPOS" .
+# 
+# https://w3id.org/def/temp_ont/TemperatureLexeme
+<https://w3id.org/def/temp_ont/TemperatureLexeme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/TemperatureLexeme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/LanguageObject> .
+<https://w3id.org/def/temp_ont/TemperatureLexeme> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature Lexeme" .
+# 
+# https://w3id.org/def/temp_ont/TemperatureScaleType
+<https://w3id.org/def/temp_ont/TemperatureScaleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/TemperatureScaleType> <http://www.w3.org/2000/01/rdf-schema#comment> "A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)" .
+# 
+# https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness
+<https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/TemperatureScaleType> .
+# 
+# https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral
+<https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/TemperatureScaleType> .
+# 
+# https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth
+<https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/TemperatureScaleType> .
+# 
+# https://w3id.org/def/temp_ont/TemperatureSystem
+<https://w3id.org/def/temp_ont/TemperatureSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/temp_ont/TemperatureSystemCentral
+# 
+# https://w3id.org/def/temp_ont/TemperatureSystemPeripheral
+# 
+# https://w3id.org/def/temp_ont/hasComment
+<https://w3id.org/def/temp_ont/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/temp_ont/temperature_air
+<https://w3id.org/def/temp_ont/temperature_air> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/temperature_air> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/SemanticDomain> .
+# 
+# https://w3id.org/def/temp_ont/temperature_ambient
+<https://w3id.org/def/temp_ont/temperature_ambient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/temperature_ambient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/SemanticDomain> .
+<https://w3id.org/def/temp_ont/temperature_ambient> <http://www.w3.org/2000/01/rdf-schema#comment> "Ambient temperatures  relate to circumstances or places" .
+# 
+# https://w3id.org/def/temp_ont/temperature_ambient_NR
+<https://w3id.org/def/temp_ont/temperature_ambient_NR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/temperature_ambient_NR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/temperature_ambient> .
+<https://w3id.org/def/temp_ont/temperature_ambient_NR> <http://www.w3.org/2000/01/rdf-schema#comment> "temperatures related to certain circumstances. Quasi-referential ambient temperature terms involve some kind of referent (the weather was cold, the room was cold), in contrast with non-referential (NR) ambient temperature terms that do not (it was cold in the room)" .
+# 
+# https://w3id.org/def/temp_ont/temperature_ambient_QR
+<https://w3id.org/def/temp_ont/temperature_ambient_QR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/temperature_ambient_QR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/temperature_ambient> .
+<https://w3id.org/def/temp_ont/temperature_ambient_QR> <http://www.w3.org/2000/01/rdf-schema#comment> "temperatures related to certain circumstances. Quasi-referential ambient temperature terms involve some kind of referent (the weather was cold, the room was cold), in contrast with non-referential ambient temperature terms that do not (it was cold in the room)" .
+# 
+# https://w3id.org/def/temp_ont/temperature_general
+<https://w3id.org/def/temp_ont/temperature_general> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/temperature_general> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/SemanticDomain> .
+# 
+# https://w3id.org/def/temp_ont/temperature_personalfeeling
+<https://w3id.org/def/temp_ont/temperature_personalfeeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/temperature_personalfeeling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/SemanticDomain> .
+<https://w3id.org/def/temp_ont/temperature_personalfeeling> <http://www.w3.org/2000/01/rdf-schema#comment> "Bodily sensations involving sentient, usually human experiencers, on a par with others, such as feeling hungry/thirsty, having pain etc. (Verhoeven 2007: 42–43). A person can feel hot or cold due to various reasons, which makes bodily sensations different from physical properties and states" .
+# 
+# https://w3id.org/def/temp_ont/temperature_tactile
+<https://w3id.org/def/temp_ont/temperature_tactile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/temperature_tactile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/SemanticDomain> .
+<https://w3id.org/def/temp_ont/temperature_tactile> <http://www.w3.org/2000/01/rdf-schema#comment> "Properties or states of particular concrete entities, carriers of properties, and align with property concepts in general (‘dark’, ‘big’, ‘sharp’, etc.)" .
+# 
+# https://w3id.org/def/temp_ont/temperature_water
+<https://w3id.org/def/temp_ont/temperature_water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/temp_ont/temperature_water> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/temp_ont/SemanticDomain> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/resource/English
+<http://dbpedia.org/resource/English> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://dbpedia.org/resource/Swedish
+<http://dbpedia.org/resource/Swedish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://purl.obolibrary.org/obo/ENVO_09200001
+<http://purl.obolibrary.org/obo/ENVO_09200001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.obolibrary.org/obo/ENVO_09200001> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/temp_ont/temperature_air> .
+<https://w3id.org/def/temp_ont/temperature_air> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/temp_ont/temperature_air
+# 
+# http://purl.obolibrary.org/obo/ENVO_09200014
+<http://purl.obolibrary.org/obo/ENVO_09200014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.obolibrary.org/obo/ENVO_09200014> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/temp_ont/temperature_water> .
+<https://w3id.org/def/temp_ont/temperature_water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/temp_ont/temperature_water
+# 
+# http://purl.obolibrary.org/obo/PATO_0000146
+<http://purl.obolibrary.org/obo/PATO_0000146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.obolibrary.org/obo/PATO_0000146> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/temp_ont/temperature_general> .
+<https://w3id.org/def/temp_ont/temperature_general> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/temp_ont/temperature_general
+# 
+# https://w3id.org/def/temp_ont/PersFeelingConstruction
+<https://w3id.org/def/temp_ont/PersFeelingConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/PersFeelingConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#class> .
+# 
+# https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness
+<https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral
+<https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth
+<https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/temp_ont/TemperatureSystem
+<https://w3id.org/def/temp_ont/TemperatureSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/temp_ont/cold
+<https://w3id.org/def/temp_ont/cold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/cold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/cold> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/English> .
+<https://w3id.org/def/temp_ont/cold> <https://w3id.org/def/temp_ont/hasSemanticDomain> <https://w3id.org/def/temp_ont/temperature_general> .
+<https://w3id.org/def/temp_ont/cold> <https://w3id.org/def/temp_ont/hasTemperatureScaleType> <https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness> .
+<https://w3id.org/def/temp_ont/cold> <https://w3id.org/def/temp_ont/isMoreColdThan> <https://w3id.org/def/temp_ont/cool> .
+<https://w3id.org/def/temp_ont/cool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/cold> <https://w3id.org/def/temp_ont/partOfTemperatureSystem> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/cold> <https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> "yes" .
+<https://w3id.org/def/temp_ont/cold> <http://www.w3.org/2000/01/rdf-schema#label> "cold" .
+# 
+# https://w3id.org/def/temp_ont/cool
+<https://w3id.org/def/temp_ont/cool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/cool> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/English> .
+<https://w3id.org/def/temp_ont/cool> <https://w3id.org/def/temp_ont/hasSemanticDomain> <https://w3id.org/def/temp_ont/temperature_general> .
+<https://w3id.org/def/temp_ont/cool> <https://w3id.org/def/temp_ont/hasTemperatureScaleType> <https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness> .
+<https://w3id.org/def/temp_ont/cool> <https://w3id.org/def/temp_ont/isLessColdThan> <https://w3id.org/def/temp_ont/cold> .
+<https://w3id.org/def/temp_ont/cool> <https://w3id.org/def/temp_ont/isMoreColdThan> <https://w3id.org/def/temp_ont/lukewarm> .
+<https://w3id.org/def/temp_ont/lukewarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/cool> <https://w3id.org/def/temp_ont/partOfTemperatureSystem> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/cool> <https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> "yes" .
+<https://w3id.org/def/temp_ont/cool> <http://www.w3.org/2000/01/rdf-schema#label> "cool" .
+# 
+# https://w3id.org/def/temp_ont/eng_Example1
+<https://w3id.org/def/temp_ont/eng_Example1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/eng_Example1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/eng_Example1> <https://w3id.org/def/temp_ont/containsWord> <https://w3id.org/def/temp_ont/hot> .
+<https://w3id.org/def/temp_ont/hot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/eng_Example1> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/English> .
+<https://w3id.org/def/temp_ont/eng_Example1> <https://w3id.org/def/temp_ont/hasExampleID> "eng_example1" .
+<https://w3id.org/def/temp_ont/eng_Example1> <https://w3id.org/def/temp_ont/hasExampleText> "It's very hot outside." .
+# 
+# https://w3id.org/def/temp_ont/eng_Example2
+<https://w3id.org/def/temp_ont/eng_Example2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/eng_Example2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/eng_Example2> <https://w3id.org/def/temp_ont/containsWord> <https://w3id.org/def/temp_ont/warm> .
+<https://w3id.org/def/temp_ont/warm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/eng_Example2> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/English> .
+<https://w3id.org/def/temp_ont/eng_Example2> <https://w3id.org/def/temp_ont/hasExampleID> "eng_example2" .
+<https://w3id.org/def/temp_ont/eng_Example2> <https://w3id.org/def/temp_ont/hasExampleText> "The water is warm." .
+# 
+# https://w3id.org/def/temp_ont/eng_Example3
+<https://w3id.org/def/temp_ont/eng_Example3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/eng_Example3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/eng_Example3> <https://w3id.org/def/temp_ont/containsWord> <https://w3id.org/def/temp_ont/lukewarm> .
+<https://w3id.org/def/temp_ont/eng_Example3> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/English> .
+<https://w3id.org/def/temp_ont/eng_Example3> <https://w3id.org/def/temp_ont/hasExampleID> "eng_example3" .
+<https://w3id.org/def/temp_ont/eng_Example3> <https://w3id.org/def/temp_ont/hasExampleText> "The tea is lukewarm." .
+# 
+# https://w3id.org/def/temp_ont/eng_Example4
+<https://w3id.org/def/temp_ont/eng_Example4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/eng_Example4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/eng_Example4> <https://w3id.org/def/temp_ont/containsWord> <https://w3id.org/def/temp_ont/cool> .
+<https://w3id.org/def/temp_ont/eng_Example4> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/English> .
+<https://w3id.org/def/temp_ont/eng_Example4> <https://w3id.org/def/temp_ont/hasExampleID> "eng_example4" .
+<https://w3id.org/def/temp_ont/eng_Example4> <https://w3id.org/def/temp_ont/hasExampleText> "The weather is cool." .
+# 
+# https://w3id.org/def/temp_ont/eng_Example5
+<https://w3id.org/def/temp_ont/eng_Example5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/eng_Example5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/eng_Example5> <https://w3id.org/def/temp_ont/containsWord> <https://w3id.org/def/temp_ont/cold> .
+<https://w3id.org/def/temp_ont/eng_Example5> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/English> .
+<https://w3id.org/def/temp_ont/eng_Example5> <https://w3id.org/def/temp_ont/hasExampleID> "eng_example5" .
+<https://w3id.org/def/temp_ont/eng_Example5> <https://w3id.org/def/temp_ont/hasExampleText> "It's freezing cold outside." .
+# 
+# https://w3id.org/def/temp_ont/hasComment
+<https://w3id.org/def/temp_ont/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/hasComment> .
+# 
+# https://w3id.org/def/temp_ont/het
+<https://w3id.org/def/temp_ont/het> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/het> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/het> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<https://w3id.org/def/temp_ont/het> <https://w3id.org/def/temp_ont/hasSemanticDomain> <https://w3id.org/def/temp_ont/temperature_general> .
+<https://w3id.org/def/temp_ont/het> <https://w3id.org/def/temp_ont/hasTemperatureScaleType> <https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth> .
+<https://w3id.org/def/temp_ont/het> <https://w3id.org/def/temp_ont/partOfTemperatureSystem> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/het> <https://w3id.org/def/temp_ont/hasComment> "anything that is covered by ex:het is also covered by ex:varm, but some instances of thermal activity can be ex:varm but not ex:het, since ex:het requires a very hot state" .
+<https://w3id.org/def/temp_ont/het> <https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> "yes" .
+<https://w3id.org/def/temp_ont/het> <http://www.w3.org/2000/01/rdf-schema#label> "het" .
+<https://w3id.org/def/temp_ont/het> <https://w3id.org/def/temp_ont/isMOreWarmThan> <https://w3id.org/def/temp_ont/varm> .
+# 
+# https://w3id.org/def/temp_ont/hot
+<https://w3id.org/def/temp_ont/hot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/hot> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/English> .
+<https://w3id.org/def/temp_ont/hot> <https://w3id.org/def/temp_ont/hasSemanticDomain> <https://w3id.org/def/temp_ont/temperature_general> .
+<https://w3id.org/def/temp_ont/hot> <https://w3id.org/def/temp_ont/hasTemperatureScaleType> <https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth> .
+<https://w3id.org/def/temp_ont/hot> <https://w3id.org/def/temp_ont/isMoreWarmThan> <https://w3id.org/def/temp_ont/warm> .
+<https://w3id.org/def/temp_ont/hot> <https://w3id.org/def/temp_ont/partOfTemperatureSystem> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/hot> <https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> "yes" .
+<https://w3id.org/def/temp_ont/hot> <http://www.w3.org/2000/01/rdf-schema#label> "hot" .
+# 
+# https://w3id.org/def/temp_ont/kall
+<https://w3id.org/def/temp_ont/kall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/kall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/kall> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<https://w3id.org/def/temp_ont/kall> <https://w3id.org/def/temp_ont/hasSemanticDomain> <https://w3id.org/def/temp_ont/temperature_general> .
+<https://w3id.org/def/temp_ont/kall> <https://w3id.org/def/temp_ont/hasTemperatureScaleType> <https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness> .
+<https://w3id.org/def/temp_ont/kall> <https://w3id.org/def/temp_ont/isMoreColdThan> <https://w3id.org/def/temp_ont/kylig> .
+<https://w3id.org/def/temp_ont/kylig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/kall> <https://w3id.org/def/temp_ont/isMoreColdThan> <https://w3id.org/def/temp_ont/sval> .
+<https://w3id.org/def/temp_ont/sval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/kall> <https://w3id.org/def/temp_ont/partOfTemperatureSystem> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/kall> <https://w3id.org/def/temp_ont/hasComment> "TBA" .
+<https://w3id.org/def/temp_ont/kall> <https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> "yes" .
+<https://w3id.org/def/temp_ont/kall> <http://www.w3.org/2000/01/rdf-schema#label> "kall" .
+# 
+# https://w3id.org/def/temp_ont/kylig
+<https://w3id.org/def/temp_ont/kylig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/kylig> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<https://w3id.org/def/temp_ont/kylig> <https://w3id.org/def/temp_ont/hasSemanticDomain> <https://w3id.org/def/temp_ont/temperature_air> .
+<https://w3id.org/def/temp_ont/kylig> <https://w3id.org/def/temp_ont/hasTemperatureScaleType> <https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness> .
+<https://w3id.org/def/temp_ont/kylig> <https://w3id.org/def/temp_ont/isLessColdThan> <https://w3id.org/def/temp_ont/kall> .
+<https://w3id.org/def/temp_ont/kylig> <https://w3id.org/def/temp_ont/isMoreColdThan> <https://w3id.org/def/temp_ont/ljummen> .
+<https://w3id.org/def/temp_ont/ljummen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/kylig> <https://w3id.org/def/temp_ont/partOfTemperatureSystem> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/kylig> <https://w3id.org/def/temp_ont/hasComment> "ex:sval has a positive connotation, as opposed to ex:kylig which has a neutral to negative connotation." .
+<https://w3id.org/def/temp_ont/kylig> <https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> "yes" .
+<https://w3id.org/def/temp_ont/kylig> <http://www.w3.org/2000/01/rdf-schema#label> "kylig" .
+# 
+# https://w3id.org/def/temp_ont/ljummen
+<https://w3id.org/def/temp_ont/ljummen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/ljummen> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/English> .
+<https://w3id.org/def/temp_ont/ljummen> <https://w3id.org/def/temp_ont/hasSemanticDomain> <https://w3id.org/def/temp_ont/temperature_air> .
+<https://w3id.org/def/temp_ont/ljummen> <https://w3id.org/def/temp_ont/hasSemanticDomain> <https://w3id.org/def/temp_ont/temperature_water> .
+<https://w3id.org/def/temp_ont/ljummen> <https://w3id.org/def/temp_ont/hasTemperatureScaleType> <https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral> .
+<https://w3id.org/def/temp_ont/ljummen> <https://w3id.org/def/temp_ont/partOfTemperatureSystem> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/ljummen> <https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> "yes" .
+<https://w3id.org/def/temp_ont/ljummen> <http://www.w3.org/2000/01/rdf-schema#label> "ljummen" .
+# 
+# https://w3id.org/def/temp_ont/lukewarm
+<https://w3id.org/def/temp_ont/lukewarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/lukewarm> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/English> .
+<https://w3id.org/def/temp_ont/lukewarm> <https://w3id.org/def/temp_ont/hasSemanticDomain> <https://w3id.org/def/temp_ont/temperature_general> .
+<https://w3id.org/def/temp_ont/lukewarm> <https://w3id.org/def/temp_ont/hasTemperatureScaleType> <https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral> .
+<https://w3id.org/def/temp_ont/lukewarm> <https://w3id.org/def/temp_ont/partOfTemperatureSystem> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/lukewarm> <https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> "yes" .
+<https://w3id.org/def/temp_ont/lukewarm> <http://www.w3.org/2000/01/rdf-schema#label> "lukewarm" .
+# 
+# https://w3id.org/def/temp_ont/sval
+<https://w3id.org/def/temp_ont/sval> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<https://w3id.org/def/temp_ont/sval> <https://w3id.org/def/temp_ont/hasSemanticDomain> <https://w3id.org/def/temp_ont/temperature_air> .
+<https://w3id.org/def/temp_ont/sval> <https://w3id.org/def/temp_ont/hasTemperatureScaleType> <https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness> .
+<https://w3id.org/def/temp_ont/sval> <https://w3id.org/def/temp_ont/isLessColdThan> <https://w3id.org/def/temp_ont/kall> .
+<https://w3id.org/def/temp_ont/sval> <https://w3id.org/def/temp_ont/isMoreColdThan> <https://w3id.org/def/temp_ont/ljummen> .
+<https://w3id.org/def/temp_ont/sval> <https://w3id.org/def/temp_ont/partOfTemperatureSystem> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/sval> <https://w3id.org/def/temp_ont/hasComment> "ex:sval has a positive connotation, as opposed to ex:kylig which has a neutral to negative connotation" .
+<https://w3id.org/def/temp_ont/sval> <https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> "yes" .
+<https://w3id.org/def/temp_ont/sval> <http://www.w3.org/2000/01/rdf-schema#label> "sval" .
+# 
+# https://w3id.org/def/temp_ont/swe_Example1
+<https://w3id.org/def/temp_ont/swe_Example1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/swe_Example1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/swe_Example1> <https://w3id.org/def/temp_ont/containsWord> <https://w3id.org/def/temp_ont/hot> .
+<https://w3id.org/def/temp_ont/swe_Example1> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<https://w3id.org/def/temp_ont/swe_Example1> <https://w3id.org/def/temp_ont/hasEnglishTranslation> "The kettle is hot when I touch it." .
+<https://w3id.org/def/temp_ont/swe_Example1> <https://w3id.org/def/temp_ont/hasExampleID> "swe_example1" .
+<https://w3id.org/def/temp_ont/swe_Example1> <https://w3id.org/def/temp_ont/hasExampleText> "Vattenkokaren är het när jag rör vid den" .
+# 
+# https://w3id.org/def/temp_ont/swe_Example2
+<https://w3id.org/def/temp_ont/swe_Example2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/swe_Example2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/swe_Example2> <https://w3id.org/def/temp_ont/containsWord> <https://w3id.org/def/temp_ont/varm> .
+<https://w3id.org/def/temp_ont/varm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/swe_Example2> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<https://w3id.org/def/temp_ont/swe_Example2> <https://w3id.org/def/temp_ont/hasEnglishTranslation> "The water is warm." .
+<https://w3id.org/def/temp_ont/swe_Example2> <https://w3id.org/def/temp_ont/hasExampleID> "swe_example2" .
+<https://w3id.org/def/temp_ont/swe_Example2> <https://w3id.org/def/temp_ont/hasExampleText> "Vattnet är varmt." .
+# 
+# https://w3id.org/def/temp_ont/swe_Example3
+<https://w3id.org/def/temp_ont/swe_Example3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/swe_Example3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/swe_Example3> <https://w3id.org/def/temp_ont/containsWord> <https://w3id.org/def/temp_ont/lukewarm> .
+<https://w3id.org/def/temp_ont/swe_Example3> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<https://w3id.org/def/temp_ont/swe_Example3> <https://w3id.org/def/temp_ont/hasEnglishTranslation> "A slightly warm potato salad." .
+<https://w3id.org/def/temp_ont/swe_Example3> <https://w3id.org/def/temp_ont/hasExampleID> "swe_example3" .
+<https://w3id.org/def/temp_ont/swe_Example3> <https://w3id.org/def/temp_ont/hasExampleText> "En ljummen potatissallad." .
+# 
+# https://w3id.org/def/temp_ont/swe_Example4
+<https://w3id.org/def/temp_ont/swe_Example4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/swe_Example4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/swe_Example4> <https://w3id.org/def/temp_ont/containsWord> <https://w3id.org/def/temp_ont/kylig> .
+<https://w3id.org/def/temp_ont/swe_Example4> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<https://w3id.org/def/temp_ont/swe_Example4> <https://w3id.org/def/temp_ont/hasEnglishTranslation> "The room felt cool." .
+<https://w3id.org/def/temp_ont/swe_Example4> <https://w3id.org/def/temp_ont/hasExampleID> "swe_example4" .
+<https://w3id.org/def/temp_ont/swe_Example4> <https://w3id.org/def/temp_ont/hasExampleText> "Rummet kändes kyligt." .
+# 
+# https://w3id.org/def/temp_ont/swe_Example5
+<https://w3id.org/def/temp_ont/swe_Example5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/swe_Example5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/swe_Example5> <https://w3id.org/def/temp_ont/containsWord> <https://w3id.org/def/temp_ont/sval> .
+<https://w3id.org/def/temp_ont/swe_Example5> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<https://w3id.org/def/temp_ont/swe_Example5> <https://w3id.org/def/temp_ont/hasEnglishTranslation> "A cool, pleasant wind cooled us down." .
+<https://w3id.org/def/temp_ont/swe_Example5> <https://w3id.org/def/temp_ont/hasExampleID> "swe_example5" .
+<https://w3id.org/def/temp_ont/swe_Example5> <https://w3id.org/def/temp_ont/hasExampleText> "En sval bris svalkade oss." .
+# 
+# https://w3id.org/def/temp_ont/swe_Example6
+<https://w3id.org/def/temp_ont/swe_Example6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/temp_ont/swe_Example6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/Example> .
+<https://w3id.org/def/temp_ont/swe_Example6> <https://w3id.org/def/temp_ont/containsWord> <https://w3id.org/def/temp_ont/kall> .
+<https://w3id.org/def/temp_ont/swe_Example6> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<https://w3id.org/def/temp_ont/swe_Example6> <https://w3id.org/def/temp_ont/hasEnglishTranslation> "It was cold outside." .
+<https://w3id.org/def/temp_ont/swe_Example6> <https://w3id.org/def/temp_ont/hasExampleID> "swe_example6" .
+<https://w3id.org/def/temp_ont/swe_Example6> <https://w3id.org/def/temp_ont/hasExampleText> "Det var kallt ute." .
+# 
+# https://w3id.org/def/temp_ont/temperature_air
+# 
+# https://w3id.org/def/temp_ont/temperature_general
+# 
+# https://w3id.org/def/temp_ont/temperature_water
+# 
+# https://w3id.org/def/temp_ont/varm
+<https://w3id.org/def/temp_ont/varm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/varm> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/Swedish> .
+<https://w3id.org/def/temp_ont/varm> <https://w3id.org/def/temp_ont/hasSemanticDomain> <https://w3id.org/def/temp_ont/temperature_general> .
+<https://w3id.org/def/temp_ont/varm> <https://w3id.org/def/temp_ont/hasTemperatureScaleType> <https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth> .
+<https://w3id.org/def/temp_ont/varm> <https://w3id.org/def/temp_ont/isLessWarmThan> <https://w3id.org/def/temp_ont/het> .
+<https://w3id.org/def/temp_ont/varm> <https://w3id.org/def/temp_ont/isMoreWarmThan> <https://w3id.org/def/temp_ont/lukewarm> .
+<https://w3id.org/def/temp_ont/varm> <https://w3id.org/def/temp_ont/hasComment> "anything that is covered by ex:het is also covered by ex:varm, but some instances of thermal activity can be ex:varm but not ex:het, since ex:het requires a very hot state" .
+<https://w3id.org/def/temp_ont/varm> <https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> "yes" .
+<https://w3id.org/def/temp_ont/varm> <http://www.w3.org/2000/01/rdf-schema#label> "varm" .
+<https://w3id.org/def/temp_ont/varm> <https://w3id.org/def/temp_ont/partOfTemperatureSystem> " \"smith2001_1\"" .
+# 
+# https://w3id.org/def/temp_ont/warm
+<https://w3id.org/def/temp_ont/warm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/temp_ont/TemperatureLexeme> .
+<https://w3id.org/def/temp_ont/warm> <https://w3id.org/def/temp_ont/hasLanguage> <http://dbpedia.org/resource/English> .
+<https://w3id.org/def/temp_ont/warm> <https://w3id.org/def/temp_ont/hasSemanticDomain> <https://w3id.org/def/temp_ont/temperature_general> .
+<https://w3id.org/def/temp_ont/warm> <https://w3id.org/def/temp_ont/hasTemperatureScaleType> <https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth> .
+<https://w3id.org/def/temp_ont/warm> <https://w3id.org/def/temp_ont/isLessWarmThan> <https://w3id.org/def/temp_ont/warm> .
+<https://w3id.org/def/temp_ont/warm> <https://w3id.org/def/temp_ont/isMoreWarmThan> <https://w3id.org/def/temp_ont/lukewarm> .
+<https://w3id.org/def/temp_ont/warm> <https://w3id.org/def/temp_ont/partOfTemperatureSystem> <https://w3id.org/def/temp_ont/TemperatureSystem> .
+<https://w3id.org/def/temp_ont/warm> <https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus> "yes" .
+<https://w3id.org/def/temp_ont/warm> <http://www.w3.org/2000/01/rdf-schema#label> "warm" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.org/def/temp_ont/PersFeelingConstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines that ex:TemperatureSystems have morphosyntactic constructions, here only for PersonalFeeling" .
+# 
+<https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness> <http://www.w3.org/2000/01/rdf-schema#comment> "A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)" .
+# 
+<https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral> <http://www.w3.org/2000/01/rdf-schema#comment> "A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)" .
+# 
+<https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth> <http://www.w3.org/2000/01/rdf-schema#comment> "A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)" .
+# 
+<https://w3id.org/def/temp_ont/TemperatureSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "we can later define a particular system (eg ex:smith2001_1) as a subclass of # TemperatureSystem, like this: # ex:smith2001_1 a owl:Class ;   rdfs:subClassOf ex:TemperatureSystem . Here the class is just defined." .
+# 
+<https://w3id.org/def/temp_ont/hasAdditionalTerms> <http://www.w3.org/2000/01/rdf-schema#comment> "We want to provide a text (string) variable to enter any additional info on temperatures terms that are not important enough to get their own entry in the semantic database. English exampless might be “torrid, “steaming" .
+<https://w3id.org/def/temp_ont/hasAdditionalTerms> <http://www.w3.org/2000/01/rdf-schema#label> "hasAdditionalTerms" .
+# 
+<https://w3id.org/def/temp_ont/hasComment> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a temperature ontology specific comment, as opposed to the general rdfs:comment." .
+# 
+<https://w3id.org/def/temp_ont/hasTemperatureScaleType> <http://www.w3.org/2000/01/rdf-schema#comment> "A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)" .
+# 
+<https://w3id.org/def/temp_ont/partOfTemperatureSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "this defines that each ex:TemperatureLexeme has to be part of a temperature system. An example temperature system might be smith_2001_1 or smith_2001_2, here assuming that in the publication smith 2001 we found two different systems, thus giving us ex:smith_2001_1_varm ex:partOfTemperatureSystem smith_2001_1" .
+<https://w3id.org/def/temp_ont/partOfTemperatureSystem> <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+<https://w3id.org/def/temp_ont/temperature_air> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature terms related specifically to ai" .
+# 
+<https://w3id.org/def/temp_ont/temperature_general> <http://www.w3.org/2000/01/rdf-schema#comment> "a non-domain specific temperatur" .
+# 
+<https://w3id.org/def/temp_ont/temperature_water> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature terms related specifically to wate" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
