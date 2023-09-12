@@ -1,0 +1,203 @@
+{
+  "@context" : {
+    "temperature_tactile" : {
+      "@id" : "https://w3id.org/def/temp_ont/temperature_tactile"
+    },
+    "hasTemperatureSystemCentralityValue" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasTemperatureSystemCentralityValue",
+      "@type" : "@id"
+    },
+    "TemperatureSystemCentral" : {
+      "@id" : "https://w3id.org/def/temp_ont/TemperatureSystemCentral"
+    },
+    "temperature_water" : {
+      "@id" : "https://w3id.org/def/temp_ont/temperature_water"
+    },
+    "PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented" : {
+      "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented"
+    },
+    "TemperatureScaleTypeWarmth" : {
+      "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth"
+    },
+    "temperature_ambient" : {
+      "@id" : "https://w3id.org/def/temp_ont/temperature_ambient"
+    },
+    "temperature_air" : {
+      "@id" : "https://w3id.org/def/temp_ont/temperature_air"
+    },
+    "PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented" : {
+      "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented"
+    },
+    "TemperatureScaleType" : {
+      "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleType"
+    },
+    "hasPersFeelingConstruction" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasPersFeelingConstruction",
+      "@type" : "@id"
+    },
+    "partOfTemperatureSystem" : {
+      "@id" : "https://w3id.org/def/temp_ont/partOfTemperatureSystem",
+      "@type" : "@id"
+    },
+    "Example" : {
+      "@id" : "https://w3id.org/def/temp_ont/Example"
+    },
+    "isLessWarmThan" : {
+      "@id" : "https://w3id.org/def/temp_ont/isLessWarmThan",
+      "@type" : "@id"
+    },
+    "isMoreWarmThan" : {
+      "@id" : "https://w3id.org/def/temp_ont/isMoreWarmThan",
+      "@type" : "@id"
+    },
+    "isLessColdThan" : {
+      "@id" : "https://w3id.org/def/temp_ont/isLessColdThan",
+      "@type" : "@id"
+    },
+    "PersFeelingConstruction_Other" : {
+      "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction_Other"
+    },
+    "minCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#minCardinality"
+    },
+    "hasDerivation" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasDerivation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SemanticDomain" : {
+      "@id" : "https://w3id.org/def/temp_ont/SemanticDomain"
+    },
+    "StateVerbPOS" : {
+      "@id" : "https://w3id.org/def/temp_ont/StateVerbPOS"
+    },
+    "class" : {
+      "@id" : "http://www.w3.org/2002/07/owl#class"
+    },
+    "hasComment" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasComment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "maxCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#maxCardinality"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "TemperatureSystemPeripheral" : {
+      "@id" : "https://w3id.org/def/temp_ont/TemperatureSystemPeripheral"
+    },
+    "hasSemanticDomain" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasSemanticDomain",
+      "@type" : "@id"
+    },
+    "temperature_personalfeeling" : {
+      "@id" : "https://w3id.org/def/temp_ont/temperature_personalfeeling"
+    },
+    "temperature_ambient_QR" : {
+      "@id" : "https://w3id.org/def/temp_ont/temperature_ambient_QR"
+    },
+    "hasSemanticBasicnessStatus" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus"
+    },
+    "OtherPOS" : {
+      "@id" : "https://w3id.org/def/temp_ont/OtherPOS"
+    },
+    "temperature_ambient_NR" : {
+      "@id" : "https://w3id.org/def/temp_ont/temperature_ambient_NR"
+    },
+    "existsInExample" : {
+      "@id" : "https://w3id.org/def/temp_ont/existsInExample",
+      "@type" : "@id"
+    },
+    "TemperatureScaleTypeColdness" : {
+      "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness"
+    },
+    "LanguageObject" : {
+      "@id" : "https://w3id.org/def/temp_ont/LanguageObject"
+    },
+    "PersFeelingConstruction" : {
+      "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction"
+    },
+    "hasExampleText" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasExampleText"
+    },
+    "TemperatureScaleTypeNeutral" : {
+      "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral"
+    },
+    "PersFeelingConstruction_IntransitiveStrategy_NonOriented" : {
+      "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_NonOriented"
+    },
+    "PersFeelingConstruction_TransitiveStrategy_NonOriented" : {
+      "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_NonOriented"
+    },
+    "hasWarmHotCollapse" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasWarmHotCollapse",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "TemperatureLexeme" : {
+      "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+    },
+    "hasNumberOfCentralSystemTerms" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasNumberOfCentralSystemTerms",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasEnglishTranslation" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasEnglishTranslation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PartOfSpeech" : {
+      "@id" : "http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"
+    },
+    "hasExampleID" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasExampleID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isMOreWarmThan" : {
+      "@id" : "https://w3id.org/def/temp_ont/isMOreWarmThan"
+    },
+    "hasTemperatureScaleType" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasTemperatureScaleType"
+    },
+    "PersFeelingConstruction_TransitiveStrategy_ExpertumOriented" : {
+      "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.0/title"
+    },
+    "isMoreColdThan" : {
+      "@id" : "https://w3id.org/def/temp_ont/isMoreColdThan",
+      "@type" : "@id"
+    },
+    "temperature_general" : {
+      "@id" : "https://w3id.org/def/temp_ont/temperature_general"
+    },
+    "Language" : {
+      "@id" : "http://dbpedia.org/resource/Language"
+    },
+    "hasLanguage" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasLanguage",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "partOfSpeech" : {
+      "@id" : "http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.0/description"
+    },
+    "containsWord" : {
+      "@id" : "https://w3id.org/def/temp_ont/containsWord",
+      "@type" : "@id"
+    },
+    "TemperatureSystem" : {
+      "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+    },
+    "hasAdditionalTerms" : {
+      "@id" : "https://w3id.org/def/temp_ont/hasAdditionalTerms",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}

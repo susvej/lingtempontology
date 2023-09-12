@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "ns0:temperature_water" "ns0:SemanticDomain" "ns0:TemperatureLexeme" "ns0:TemperatureScaleTypeColdness" "ns0:TemperatureScaleTypeWarmth" "ns0:TemperatureSystem" "560bdbb4:18a8a7fffb8:-7ffc" "ns0:temperature_general" "ns0:TemperatureScaleType" "ns0:temperature_air" "ns0:Example" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "ns0:temperature_water" "ns0:SemanticDomain" "ns0:TemperatureLexeme" "ns0:TemperatureScaleTypeColdness" "ns0:TemperatureScaleTypeWarmth" "ns0:TemperatureSystem" "ns0:temperature_general" "ns0:TemperatureScaleType" "ns0:temperature_air" "ns0:Example" "-7c82cb88:18a8aef20e1:-7ffc" ; /*classes style*/
 	"ns0:swe_Example6" -> "http://dbpedia.org/resource/Swedish" [ label = "ns0:hasLanguage" ];
 	"ns0:swe_Example6" -> "ns0:kall" [ label = "ns0:containsWord" ];
 	"ns0:temperature_general" -> "obo:PATO_0000146" [ label = "owl:sameAs" ];
@@ -61,14 +61,14 @@ node [shape = rectangle, color="orange"]; "ns0:temperature_water" "ns0:SemanticD
 	"ns0:eng_Example1" -> "ns0:hot" [ label = "ns0:containsWord" ];
 	"ns0:swe_Example3" -> "http://dbpedia.org/resource/Swedish" [ label = "ns0:hasLanguage" ];
 	"ns0:swe_Example3" -> "ns0:lukewarm" [ label = "ns0:containsWord" ];
-	"NULL" -> "560bdbb4:18a8a7fffb8:-7ff6" [ label = "rdf:rest" ];
-	"NULL" -> "560bdbb4:18a8a7fffb8:-7ff7" [ label = "rdf:rest" ];
-	"NULL" -> "560bdbb4:18a8a7fffb8:-7ff8" [ label = "owl:oneOf" ];
+	"NULL" -> "-7c82cb88:18a8aef20e1:-7ff6" [ label = "rdf:rest" ];
+	"NULL" -> "-7c82cb88:18a8aef20e1:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "-7c82cb88:18a8aef20e1:-7ff8" [ label = "owl:oneOf" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "ns0:TemperatureSystemPeripheral" [ label = "rdf:first" ];
-	"NULL" -> "560bdbb4:18a8a7fffb8:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "-7c82cb88:18a8aef20e1:-7ffa" [ label = "rdf:rest" ];
 	"NULL" -> "ns0:TemperatureSystemCentral" [ label = "rdf:first" ];
-	"NULL" -> "560bdbb4:18a8a7fffb8:-7ffb" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-7c82cb88:18a8aef20e1:-7ffb" [ label = "owl:intersectionOf" ];
 	"ns0:sval" -> "ns0:TemperatureSystem" [ label = "ns0:partOfTemperatureSystem" ];
 	"ns0:sval" -> "http://dbpedia.org/resource/Swedish" [ label = "ns0:hasLanguage" ];
 	"ns0:sval" -> "ns0:temperature_air" [ label = "ns0:hasSemanticDomain" ];
@@ -110,8 +110,8 @@ node [shape = rectangle, color="orange"]; "ns0:temperature_water" "ns0:SemanticD
 	"ns0:TemperatureLexeme" -> "ns0:TemperatureLexeme" [ label = "ns0:isLessWarmThan" ];
 	"ns0:TemperatureLexeme" -> "ns0:TemperatureLexeme" [ label = "ns0:isMoreColdThan" ];
 	"ns0:Example" -> "ns0:TemperatureLexeme" [ label = "ns0:containsWord" ];
-	"ns0:TemperatureLexeme" -> "560bdbb4:18a8a7fffb8:-7ffc" [ label = "ns0:hasTemperatureSystemCentralityValue" ];
-	"ns0:TemperatureLexeme" -> "560bdbb4:18a8a7fffb8:-7ff9" [ label = "ns0:hasSemanticBasicnessStatus" ];
+	"ns0:TemperatureLexeme" -> "-7c82cb88:18a8aef20e1:-7ffc" [ label = "ns0:hasTemperatureSystemCentralityValue" ];
+	"ns0:TemperatureLexeme" -> "-7c82cb88:18a8aef20e1:-7ff9" [ label = "ns0:hasSemanticBasicnessStatus" ];
 	"ns0:Example" -> "xsd:string" [ label = "ns0:hasExampleID" ];
 	"ns0:TemperatureLexeme" -> "ns0:Example" [ label = "ns0:existsInExample" ];
 	"ns0:TemperatureLexeme" -> "ns0:TemperatureLexeme" [ label = "ns0:isLessColdThan" ];
