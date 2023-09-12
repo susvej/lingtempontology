@@ -1,0 +1,1121 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/def/temp_ont/TemperatureSystemCentral"
+    }, {
+      "@id" : "https://w3id.org/def/temp_ont/TemperatureSystemPeripheral"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "no"
+    }, {
+      "@value" : "unknown"
+    }, {
+      "@value" : "yes"
+    } ]
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/English",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Swedish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/ENVO_09200001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_air"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/ENVO_09200014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_water"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/PATO_0000146",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_general"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.0/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.0/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines that ex:TemperatureLexeme has a partOfSpeech (note lower case p) property, importinh it from the lexinfo ontology. Very relevant subclasses of the class PartOfSpeech (note capital p) include /lexinfo#NounPOS, /lexinfo#VerbPOS, /lexinfo#AdjectivePOS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#maxCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#minCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.0/description" : [ {
+    "@value" : "An ontology for capturing cross-linguistic temperature terms and their meanings."
+  } ],
+  "http://purl.org/dc/elements/1.0/title" : [ {
+    "@value" : "The Linguistics of Temperature Terms Ontology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/Example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Examples of temperature terms in use. Examples are languages objects, and can thus be the Subjects of the hasLanguage property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/LanguageObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/LanguageObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Words, phrases, examples, texts, are language objects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Language Object"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/OtherPOS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "For each instance of OtherPOS Consider adding to the TemperatureLexeme's rdfs:comment some text /rdfs:comment to add info on what this OtherPOS actually is"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OtherPOS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines that ex:TemperatureSystems have morphosyntactic constructions, here only for PersonalFeeling"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines different kinds of  morphosyntactic constructions from p 137 in Koptjevskaja-Tamm, M. (2022). Semantic maps and temperature: Capturing the lexicon-grammar interface across languages. Zeitschrift für Sprachwissenschaft, 41(1), 125-177. https://doi.org/10.1515/zfs-2021-2042"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_NonOriented",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction_Other",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_NonOriented",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/SemanticDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines that TemperatureLexeme has a semantic domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Semantic Domain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/StateVerbPOS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the lexinfo ontology does not define State verbs, nor does it have a general “other POS” option, so we add those her"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "StateVerbPOS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Temperature Lexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/LanguageObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "we can later define a particular system (eg ex:smith2001_1) as a subclass of # TemperatureSystem, like this: # ex:smith2001_1 a owl:Class ;   rdfs:subClassOf ex:TemperatureSystem . Here the class is just defined."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/TemperatureSystemCentral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/TemperatureSystemPeripheral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/cold",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cold"
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/English"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus" : [ {
+    "@value" : "yes"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticDomain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_general"
+  } ],
+  "https://w3id.org/def/temp_ont/hasTemperatureScaleType" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness"
+  } ],
+  "https://w3id.org/def/temp_ont/isMoreColdThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/cool"
+  } ],
+  "https://w3id.org/def/temp_ont/partOfTemperatureSystem" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/containsWord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Examples contain word"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/existsInExample"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/cool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cool"
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/English"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus" : [ {
+    "@value" : "yes"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticDomain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_general"
+  } ],
+  "https://w3id.org/def/temp_ont/hasTemperatureScaleType" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness"
+  } ],
+  "https://w3id.org/def/temp_ont/isLessColdThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/cold"
+  } ],
+  "https://w3id.org/def/temp_ont/isMoreColdThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/lukewarm"
+  } ],
+  "https://w3id.org/def/temp_ont/partOfTemperatureSystem" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/eng_Example1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "https://w3id.org/def/temp_ont/containsWord" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/hot"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleID" : [ {
+    "@value" : "eng_example1"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleText" : [ {
+    "@value" : "It's very hot outside."
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/English"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/eng_Example2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "https://w3id.org/def/temp_ont/containsWord" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/warm"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleID" : [ {
+    "@value" : "eng_example2"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleText" : [ {
+    "@value" : "The water is warm."
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/English"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/eng_Example3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "https://w3id.org/def/temp_ont/containsWord" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/lukewarm"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleID" : [ {
+    "@value" : "eng_example3"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleText" : [ {
+    "@value" : "The tea is lukewarm."
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/English"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/eng_Example4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "https://w3id.org/def/temp_ont/containsWord" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/cool"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleID" : [ {
+    "@value" : "eng_example4"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleText" : [ {
+    "@value" : "The weather is cool."
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/English"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/eng_Example5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "https://w3id.org/def/temp_ont/containsWord" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/cold"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleID" : [ {
+    "@value" : "eng_example5"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleText" : [ {
+    "@value" : "It's freezing cold outside."
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/English"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/existsInExample",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasAdditionalTerms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "We want to provide a text (string) variable to enter any additional info on temperatures terms that are not important enough to get their own entry in the semantic database. English exampless might be “torrid, “steaming"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasAdditionalTerms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasComment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/hasComment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This is a temperature ontology specific comment, as opposed to the general rdfs:comment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasDerivation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines that ex:TemperatureLexeme can be derived from some other word"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasEnglishTranslation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Each example has a translation into our business language, which is English"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasExampleID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Examples should have unique ids, composed by the temperature system id plus an additional unique number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasExampleText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines that ex:TemperatureLexeme have languages, and that those languages are # subclasses of http://dbpedia.org/resource/Language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/LanguageObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/resource/Language"
+  } ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasNumberOfCentralSystemTerms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "We want to record the number of system central terms that a particular system has"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasNumberOfCentralSystemTerms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasPersFeelingConstruction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/PersFeelingConstruction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : " Each TemperatureLexeme has a BasicnessStatus (is it a basic temperature term?), which can be one of yes no unknown"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasSemanticDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/SemanticDomain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasTemperatureScaleType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasTemperatureSystemCentralityValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An important distinction is whether a temperature term is domain CENTRAL or domain PERIPHERAL"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasTemperatureSystemCentralityValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hasWarmHotCollapse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An important distinction is whether a temperature system collapses two levels on the warmer scale (warm+cold in one), or if it keeps them separate (warm; cold). This can be either 1 (True, yes theere is a collapse) or 0 (False, there is no collapse)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasWarmHotCollapse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/het",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "het"
+  } ],
+  "https://w3id.org/def/temp_ont/hasComment" : [ {
+    "@value" : "anything that is covered by ex:het is also covered by ex:varm, but some instances of thermal activity can be ex:varm but not ex:het, since ex:het requires a very hot state"
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/Swedish"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus" : [ {
+    "@value" : "yes"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticDomain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_general"
+  } ],
+  "https://w3id.org/def/temp_ont/hasTemperatureScaleType" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth"
+  } ],
+  "https://w3id.org/def/temp_ont/isMOreWarmThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/varm"
+  } ],
+  "https://w3id.org/def/temp_ont/partOfTemperatureSystem" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/hot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hot"
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/English"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus" : [ {
+    "@value" : "yes"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticDomain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_general"
+  } ],
+  "https://w3id.org/def/temp_ont/hasTemperatureScaleType" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth"
+  } ],
+  "https://w3id.org/def/temp_ont/isMoreWarmThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/warm"
+  } ],
+  "https://w3id.org/def/temp_ont/partOfTemperatureSystem" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/isLessColdThan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A TemperatureLexeme also have relative temperatures to each other. # Note that the inverse relationship means we do not at first have to  # mark both relationships when we add data - a reasoner can do that  # automatically for us"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/isMoreColdThan"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/isLessWarmThan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A TemperatureLexeme also have relative temperatures to each other. # Note that the inverse relationship means we do not at first have to  # mark both relationships when we add data - a reasoner can do that  # automatically for us"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/isMoreWarmThan"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/isMOreWarmThan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/isMoreColdThan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A TemperatureLexeme also have relative temperatures to each other. # Note that the inverse relationship means we do not at first have to  # mark both relationships when we add data - a reasoner can do that  # automatically for us"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/isMoreWarmThan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A TemperatureLexeme also have relative temperatures to each other. # Note that the inverse relationship means we do not at first have to  # mark both relationships when we add data - a reasoner can do that  # automatically for us"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/kall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "kall"
+  } ],
+  "https://w3id.org/def/temp_ont/hasComment" : [ {
+    "@value" : "TBA"
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/Swedish"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus" : [ {
+    "@value" : "yes"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticDomain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_general"
+  } ],
+  "https://w3id.org/def/temp_ont/hasTemperatureScaleType" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness"
+  } ],
+  "https://w3id.org/def/temp_ont/isMoreColdThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/kylig"
+  }, {
+    "@id" : "https://w3id.org/def/temp_ont/sval"
+  } ],
+  "https://w3id.org/def/temp_ont/partOfTemperatureSystem" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/kylig",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "kylig"
+  } ],
+  "https://w3id.org/def/temp_ont/hasComment" : [ {
+    "@value" : "ex:sval has a positive connotation, as opposed to ex:kylig which has a neutral to negative connotation."
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/Swedish"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus" : [ {
+    "@value" : "yes"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticDomain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_air"
+  } ],
+  "https://w3id.org/def/temp_ont/hasTemperatureScaleType" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness"
+  } ],
+  "https://w3id.org/def/temp_ont/isLessColdThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/kall"
+  } ],
+  "https://w3id.org/def/temp_ont/isMoreColdThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/ljummen"
+  } ],
+  "https://w3id.org/def/temp_ont/partOfTemperatureSystem" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/ljummen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ljummen"
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/English"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus" : [ {
+    "@value" : "yes"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticDomain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_air"
+  }, {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_water"
+  } ],
+  "https://w3id.org/def/temp_ont/hasTemperatureScaleType" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral"
+  } ],
+  "https://w3id.org/def/temp_ont/partOfTemperatureSystem" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/lukewarm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "lukewarm"
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/English"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus" : [ {
+    "@value" : "yes"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticDomain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_general"
+  } ],
+  "https://w3id.org/def/temp_ont/hasTemperatureScaleType" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral"
+  } ],
+  "https://w3id.org/def/temp_ont/partOfTemperatureSystem" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/partOfTemperatureSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "this defines that each ex:TemperatureLexeme has to be part of a temperature system. An example temperature system might be smith_2001_1 or smith_2001_2, here assuming that in the publication smith 2001 we found two different systems, thus giving us ex:smith_2001_1_varm ex:partOfTemperatureSystem smith_2001_1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/sval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "sval"
+  } ],
+  "https://w3id.org/def/temp_ont/hasComment" : [ {
+    "@value" : "ex:sval has a positive connotation, as opposed to ex:kylig which has a neutral to negative connotation"
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/Swedish"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus" : [ {
+    "@value" : "yes"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticDomain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_air"
+  } ],
+  "https://w3id.org/def/temp_ont/hasTemperatureScaleType" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness"
+  } ],
+  "https://w3id.org/def/temp_ont/isLessColdThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/kall"
+  } ],
+  "https://w3id.org/def/temp_ont/isMoreColdThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/ljummen"
+  } ],
+  "https://w3id.org/def/temp_ont/partOfTemperatureSystem" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/swe_Example1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "https://w3id.org/def/temp_ont/containsWord" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/hot"
+  } ],
+  "https://w3id.org/def/temp_ont/hasEnglishTranslation" : [ {
+    "@value" : "The kettle is hot when I touch it."
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleID" : [ {
+    "@value" : "swe_example1"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleText" : [ {
+    "@value" : "Vattenkokaren är het när jag rör vid den"
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/Swedish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/swe_Example2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "https://w3id.org/def/temp_ont/containsWord" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/varm"
+  } ],
+  "https://w3id.org/def/temp_ont/hasEnglishTranslation" : [ {
+    "@value" : "The water is warm."
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleID" : [ {
+    "@value" : "swe_example2"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleText" : [ {
+    "@value" : "Vattnet är varmt."
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/Swedish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/swe_Example3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "https://w3id.org/def/temp_ont/containsWord" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/lukewarm"
+  } ],
+  "https://w3id.org/def/temp_ont/hasEnglishTranslation" : [ {
+    "@value" : "A slightly warm potato salad."
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleID" : [ {
+    "@value" : "swe_example3"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleText" : [ {
+    "@value" : "En ljummen potatissallad."
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/Swedish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/swe_Example4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "https://w3id.org/def/temp_ont/containsWord" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/kylig"
+  } ],
+  "https://w3id.org/def/temp_ont/hasEnglishTranslation" : [ {
+    "@value" : "The room felt cool."
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleID" : [ {
+    "@value" : "swe_example4"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleText" : [ {
+    "@value" : "Rummet kändes kyligt."
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/Swedish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/swe_Example5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "https://w3id.org/def/temp_ont/containsWord" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/sval"
+  } ],
+  "https://w3id.org/def/temp_ont/hasEnglishTranslation" : [ {
+    "@value" : "A cool, pleasant wind cooled us down."
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleID" : [ {
+    "@value" : "swe_example5"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleText" : [ {
+    "@value" : "En sval bris svalkade oss."
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/Swedish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/swe_Example6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/Example"
+  } ],
+  "https://w3id.org/def/temp_ont/containsWord" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/kall"
+  } ],
+  "https://w3id.org/def/temp_ont/hasEnglishTranslation" : [ {
+    "@value" : "It was cold outside."
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleID" : [ {
+    "@value" : "swe_example6"
+  } ],
+  "https://w3id.org/def/temp_ont/hasExampleText" : [ {
+    "@value" : "Det var kallt ute."
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/Swedish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/temperature_air",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Temperature terms related specifically to ai"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/SemanticDomain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/temperature_ambient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ambient temperatures  relate to circumstances or places"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/SemanticDomain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/temperature_ambient_NR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "temperatures related to certain circumstances. Quasi-referential ambient temperature terms involve some kind of referent (the weather was cold, the room was cold), in contrast with non-referential (NR) ambient temperature terms that do not (it was cold in the room)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_ambient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/temperature_ambient_QR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "temperatures related to certain circumstances. Quasi-referential ambient temperature terms involve some kind of referent (the weather was cold, the room was cold), in contrast with non-referential ambient temperature terms that do not (it was cold in the room)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_ambient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/temperature_general",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a non-domain specific temperatur"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/SemanticDomain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/temperature_personalfeeling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Bodily sensations involving sentient, usually human experiencers, on a par with others, such as feeling hungry/thirsty, having pain etc. (Verhoeven 2007: 42–43). A person can feel hot or cold due to various reasons, which makes bodily sensations different from physical properties and states"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/SemanticDomain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/temperature_tactile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Properties or states of particular concrete entities, carriers of properties, and align with property concepts in general (‘dark’, ‘big’, ‘sharp’, etc.)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/SemanticDomain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/temperature_water",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Temperature terms related specifically to wate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/SemanticDomain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/varm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "varm"
+  } ],
+  "https://w3id.org/def/temp_ont/hasComment" : [ {
+    "@value" : "anything that is covered by ex:het is also covered by ex:varm, but some instances of thermal activity can be ex:varm but not ex:het, since ex:het requires a very hot state"
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/Swedish"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus" : [ {
+    "@value" : "yes"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticDomain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_general"
+  } ],
+  "https://w3id.org/def/temp_ont/hasTemperatureScaleType" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth"
+  } ],
+  "https://w3id.org/def/temp_ont/isLessWarmThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/het"
+  } ],
+  "https://w3id.org/def/temp_ont/isMoreWarmThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/lukewarm"
+  } ],
+  "https://w3id.org/def/temp_ont/partOfTemperatureSystem" : [ {
+    "@value" : " \"smith2001_1\""
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/temp_ont/warm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureLexeme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "warm"
+  } ],
+  "https://w3id.org/def/temp_ont/hasLanguage" : [ {
+    "@id" : "http://dbpedia.org/resource/English"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticBasicnessStatus" : [ {
+    "@value" : "yes"
+  } ],
+  "https://w3id.org/def/temp_ont/hasSemanticDomain" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/temperature_general"
+  } ],
+  "https://w3id.org/def/temp_ont/hasTemperatureScaleType" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth"
+  } ],
+  "https://w3id.org/def/temp_ont/isLessWarmThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/warm"
+  } ],
+  "https://w3id.org/def/temp_ont/isMoreWarmThan" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/lukewarm"
+  } ],
+  "https://w3id.org/def/temp_ont/partOfTemperatureSystem" : [ {
+    "@id" : "https://w3id.org/def/temp_ont/TemperatureSystem"
+  } ]
+} ]
