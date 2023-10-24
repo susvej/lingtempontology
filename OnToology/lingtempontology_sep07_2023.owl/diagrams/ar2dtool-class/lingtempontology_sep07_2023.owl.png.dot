@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "ns0:LanguageObject" "ns0:TemperatureLexeme" "ns0:temperature_water" "ns0:temperature_air" "ns0:TemperatureScaleTypeWarmth" "ns0:TemperatureScaleTypeNeutral" "ns0:TemperatureScaleTypeColdness" "ns0:TemperatureScaleType" "ns0:SemanticDomain" "ns0:temperature_general" "ns0:Example" "ns0:TemperatureSystem" "a43f3fc:18a8b21a090:-7ffc" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "ns0:LanguageObject" "ns0:TemperatureLexeme" "ns0:temperature_water" "ns0:temperature_air" "ns0:TemperatureScaleTypeWarmth" "-5d45d71d:18b630274d5:-7ffc" "ns0:TemperatureScaleTypeNeutral" "ns0:TemperatureScaleTypeColdness" "ns0:TemperatureScaleType" "ns0:SemanticDomain" "ns0:temperature_general" "ns0:Example" "ns0:TemperatureSystem" ; /*classes style*/
 	"ns0:het" -> "ns0:varm" [ label = "ns0:isMOreWarmThan" ];
 	"ns0:het" -> "ns0:TemperatureScaleTypeWarmth" [ label = "ns0:hasTemperatureScaleType" ];
 	"ns0:het" -> "ns0:TemperatureSystem" [ label = "ns0:partOfTemperatureSystem" ];
@@ -56,14 +56,14 @@ node [shape = rectangle, color="orange"]; "ns0:LanguageObject" "ns0:TemperatureL
 	"ns0:kall" -> "ns0:temperature_general" [ label = "ns0:hasSemanticDomain" ];
 	"ns0:kall" -> "ns0:kylig" [ label = "ns0:isMoreColdThan" ];
 	"ns0:kall" -> "http://dbpedia.org/resource/Swedish" [ label = "ns0:hasLanguage" ];
-	"NULL" -> "a43f3fc:18a8b21a090:-7ff7" [ label = "rdf:rest" ];
-	"NULL" -> "a43f3fc:18a8b21a090:-7ff8" [ label = "owl:oneOf" ];
+	"NULL" -> "-5d45d71d:18b630274d5:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "-5d45d71d:18b630274d5:-7ff8" [ label = "owl:oneOf" ];
 	"NULL" -> "ns0:TemperatureSystemPeripheral" [ label = "rdf:first" ];
-	"NULL" -> "a43f3fc:18a8b21a090:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "-5d45d71d:18b630274d5:-7ffa" [ label = "rdf:rest" ];
 	"NULL" -> "ns0:TemperatureSystemCentral" [ label = "rdf:first" ];
-	"NULL" -> "a43f3fc:18a8b21a090:-7ffb" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-5d45d71d:18b630274d5:-7ffb" [ label = "owl:intersectionOf" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
-	"NULL" -> "a43f3fc:18a8b21a090:-7ff6" [ label = "rdf:rest" ];
+	"NULL" -> "-5d45d71d:18b630274d5:-7ff6" [ label = "rdf:rest" ];
 	"ns0:eng_Example2" -> "http://dbpedia.org/resource/English" [ label = "ns0:hasLanguage" ];
 	"ns0:eng_Example2" -> "ns0:warm" [ label = "ns0:containsWord" ];
 	"ns0:ljummen" -> "ns0:TemperatureScaleTypeNeutral" [ label = "ns0:hasTemperatureScaleType" ];
@@ -110,8 +110,8 @@ node [shape = rectangle, color="orange"]; "ns0:LanguageObject" "ns0:TemperatureL
 	"ns0:TemperatureLexeme" -> "http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech" [ label = "http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech" ];
 	"ns0:Example" -> "ns0:TemperatureLexeme" [ label = "ns0:containsWord" ];
 	"ns0:TemperatureSystem" -> "xsd:boolean" [ label = "ns0:hasWarmHotCollapse" ];
-	"ns0:TemperatureLexeme" -> "a43f3fc:18a8b21a090:-7ffc" [ label = "ns0:hasTemperatureSystemCentralityValue" ];
-	"ns0:TemperatureLexeme" -> "a43f3fc:18a8b21a090:-7ff9" [ label = "ns0:hasSemanticBasicnessStatus" ];
+	"ns0:TemperatureLexeme" -> "-5d45d71d:18b630274d5:-7ffc" [ label = "ns0:hasTemperatureSystemCentralityValue" ];
+	"ns0:TemperatureLexeme" -> "-5d45d71d:18b630274d5:-7ff9" [ label = "ns0:hasSemanticBasicnessStatus" ];
 	"ns0:TemperatureSystem" -> "ns0:PersFeelingConstruction" [ label = "ns0:hasPersFeelingConstruction" ];
 	"ns0:Example" -> "xsd:string" [ label = "ns0:hasExampleID" ];
 	"ns0:TemperatureLexeme" -> "ns0:TemperatureLexeme" [ label = "ns0:isMoreColdThan" ];
