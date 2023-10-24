@@ -1,29 +1,9 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "ns0:OtherPOS" "ns0:LanguageObject" "ns0:temperature_ambient_QR" "ns0:TemperatureLexeme" "ns0:PersFeelingConstruction_Other" "ns0:temperature_water" "ns0:temperature_air" "ns0:TemperatureScaleTypeWarmth" "ns0:temperature_tactile" "ns0:temperature_ambient_NR" "ns0:PersFeelingConstruction_TransitiveStrategy_NonOriented" "ns0:PersFeelingConstruction" "ns0:TemperatureSystemValue" "ns0:TemperatureSystemPeripheral" "ns0:TemperatureScaleTypeNeutral" "ns0:PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented" "ns0:temperature_personalfeeling" "ns0:TemperatureSystemCentral" "ns0:TemperatureScaleTypeColdness" "ns0:StateVerbPOS" "ns0:TemperatureScaleType" "ns0:PersFeelingConstruction_IntransitiveStrategy_NonOriented" "ns0:SemanticDomain" "ns0:temperature_ambient" "ns0:temperature_general" "ns0:PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented" "ns0:Example" "ns0:PersFeelingConstruction_TransitiveStrategy_ExpertumOriented" ; /*classes style*/
-	"ns0:TemperatureScaleTypeColdness" -> "ns0:TemperatureScaleType" [ label = "rdfs:subClassOf" ];
-	"ns0:PersFeelingConstruction_Other" -> "ns0:PersFeelingConstruction" [ label = "rdfs:subClassOf" ];
-	"ns0:temperature_ambient_QR" -> "ns0:temperature_ambient" [ label = "rdfs:subClassOf" ];
-	"ns0:PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented" -> "ns0:PersFeelingConstruction" [ label = "rdfs:subClassOf" ];
-	"ns0:PersFeelingConstruction_TransitiveStrategy_ExpertumOriented" -> "ns0:PersFeelingConstruction" [ label = "rdfs:subClassOf" ];
-	"ns0:temperature_tactile" -> "ns0:SemanticDomain" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "ns0:Example" "ns0:SemanticDomain" "ns0:TemperatureLexeme" "ns0:LanguageObject" ; /*classes style*/
 	"ns0:Example" -> "ns0:LanguageObject" [ label = "rdfs:subClassOf" ];
-	"ns0:TemperatureSystemPeripheral" -> "ns0:TemperatureSystemValue" [ label = "rdfs:subClassOf" ];
-	"ns0:temperature_water" -> "ns0:SemanticDomain" [ label = "rdfs:subClassOf" ];
-	"ns0:temperature_ambient_NR" -> "ns0:temperature_ambient" [ label = "rdfs:subClassOf" ];
-	"ns0:TemperatureSystemCentral" -> "ns0:TemperatureSystemValue" [ label = "rdfs:subClassOf" ];
-	"ns0:temperature_air" -> "ns0:SemanticDomain" [ label = "rdfs:subClassOf" ];
-	"ns0:TemperatureLexeme" -> "ns0:LanguageObject" [ label = "rdfs:subClassOf" ];
-	"ns0:PersFeelingConstruction_IntransitiveStrategy_NonOriented" -> "ns0:PersFeelingConstruction" [ label = "rdfs:subClassOf" ];
 	"ns0:temperature_ambient" -> "ns0:SemanticDomain" [ label = "rdfs:subClassOf" ];
-	"ns0:TemperatureScaleTypeNeutral" -> "ns0:TemperatureScaleType" [ label = "rdfs:subClassOf" ];
-	"ns0:TemperatureScaleTypeWarmth" -> "ns0:TemperatureScaleType" [ label = "rdfs:subClassOf" ];
-	"ns0:OtherPOS" -> "http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech" [ label = "rdfs:subClassOf" ];
-	"ns0:StateVerbPOS" -> "http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech" [ label = "rdfs:subClassOf" ];
-	"ns0:temperature_personalfeeling" -> "ns0:SemanticDomain" [ label = "rdfs:subClassOf" ];
-	"ns0:PersFeelingConstruction_TransitiveStrategy_NonOriented" -> "ns0:PersFeelingConstruction" [ label = "rdfs:subClassOf" ];
-	"ns0:temperature_general" -> "ns0:SemanticDomain" [ label = "rdfs:subClassOf" ];
-	"ns0:PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented" -> "ns0:PersFeelingConstruction" [ label = "rdfs:subClassOf" ];
+	"ns0:TemperatureLexeme" -> "ns0:LanguageObject" [ label = "rdfs:subClassOf" ];
 
 }
