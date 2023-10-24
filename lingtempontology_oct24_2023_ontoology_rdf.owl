@@ -11,8 +11,8 @@
     <owl:Ontology rdf:about="https://w3id.org/def/temp_ont">
         <dc:title>The Linguistics of Temperature Terms Ontology</dc:title>
         <dc:description>An ontology for capturing cross-linguistic temperature terms and their meanings.</dc:description>
-		 <owl:imports rdf:resource="http://www.lexinfo.net/ontology/3.0"/>
-		 <owl:imports rdf:resource="http://dbpedia.org/resource/Language"/>
+		 <owl:imports rdf:resource="http://www.lexinfo.net/ontology/3.0#"/>
+		 <owl:imports rdf:resource="http://dbpedia.org/resource/"/>
     </owl:Ontology>
 
   <owl:Class rdf:about="https://w3id.org/def/temp_ont/LanguageObject">
@@ -41,18 +41,27 @@
   </owl:ObjectProperty>
 
 <!-- # the lexinfo ontology does not define State verbs, nor does it have a general “other POS” option, so we add those here -->
-<owl:Class rdf:about="https://w3id.org/def/temp_ont/StateVerbPOS">
-  <rdfs:comment>the lexinfo ontology does not define State verbs, nor does it have a general “other POS” option, so we add those her</rdfs:comment>
-  <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
-  <rdfs:label>StateVerbPOS</rdfs:label>
-</owl:Class>
-
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/POS_StateVerb">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+	<rdfs:comment>the lexinfo ontology does not define State verbs, nor does it have a general “other POS” option, so we add those her</rdfs:comment>
+	<rdfs:label>StateVerbPOS</rdfs:label>
+  </rdf:Description>
+  
 <!-- # Consider using <rdfs:comment> some text </rdfs:comment> to add info on the POS for OtherPOS-->
-<owl:Class rdf:about="https://w3id.org/def/temp_ont/OtherPOS">
-  <rdfs:comment>For each instance of OtherPOS Consider adding to the TemperatureLexeme's rdfs:comment some text /rdfs:comment to add info on what this OtherPOS actually is</rdfs:comment>
-  <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
-  <rdfs:label>OtherPOS</rdfs:label>
-</owl:Class>
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/POS_Other">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+    <rdfs:comment>For each instance of OtherPOS Consider adding to the TemperatureLexeme's rdfs:comment some text /rdfs:comment to add info on what this OtherPOS actually is</rdfs:comment>
+	<rdfs:label>Oher POS</rdfs:label>
+  </rdf:Description>
+  
+    <rdf:Description rdf:about="https://w3id.org/def/temp_ont/POS_Other">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+    <rdfs:comment>For each instance of OtherPOS Consider adding to the TemperatureLexeme's rdfs:comment some text /rdfs:comment to add info on what this OtherPOS actually is</rdfs:comment>
+	<rdfs:label>Oher POS</rdfs:label>
+  </rdf:Description>
+  
+  
+
 
 
 <!--# Defines that TemperatureLexeme has a semantic domain -->
@@ -68,48 +77,49 @@
   </owl:ObjectProperty>
 
 <!-- # semantic domains include: general use, air, water, personal feeling (I feel warm) and tactile -->
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/temperature_general">
+ 
+  <rdf:Description  rdf:about="https://w3id.org/def/temp_ont/temperature_general">
+    <rdf:type rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
     <rdfs:comment>a non-domain specific temperatur</rdfs:comment>
     <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/PATO_0000146"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
-  </owl:Class>
+  </rdf:Description>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/temperature_personalfeeling">
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/temperature_personalfeeling">
     <rdfs:comment>Bodily sensations involving sentient, usually human experiencers, on a par with others, such as feeling hungry/thirsty, having pain etc. (Verhoeven 2007: 42–43). A person can feel hot or cold due to various reasons, which makes bodily sensations different from physical properties and states</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
-  </owl:Class>
+    <rdf:type rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
+  </rdf:Description>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/temperature_tactile">
-  <rdfs:comment>Properties or states of particular concrete entities, carriers of properties, and align with property concepts in general (‘dark’, ‘big’, ‘sharp’, etc.)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
-  </owl:Class>
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/temperature_tactile">
+     <rdfs:comment>Properties or states of particular concrete entities, carriers of properties, and align with property concepts in general (‘dark’, ‘big’, ‘sharp’, etc.)</rdfs:comment>
+	 <rdf:type rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
+  </rdf:Description>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/temperature_ambient">
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/temperature_ambient">
   <rdfs:comment>Ambient temperatures  relate to circumstances or places</rdfs:comment>
     <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
-  </owl:Class>
+  </rdf:Description>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/temperature_ambient_QR">
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/temperature_ambient_QR">
   <rdfs:comment>temperatures related to certain circumstances. Quasi-referential ambient temperature terms involve some kind of referent (the weather was cold, the room was cold), in contrast with non-referential ambient temperature terms that do not (it was cold in the room)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/temperature_ambient"/>
-  </owl:Class>
+    <rdf:type rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
+  </rdf:Description>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/temperature_ambient_NR">
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/temperature_ambient_NR">
     <rdfs:comment>temperatures related to certain circumstances. Quasi-referential ambient temperature terms involve some kind of referent (the weather was cold, the room was cold), in contrast with non-referential (NR) ambient temperature terms that do not (it was cold in the room)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/temperature_ambient"/>
-  </owl:Class>
+    <rdf:type rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
+  </rdf:Description>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/temperature_air">
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/temperature_air">
   <rdfs:comment>Temperature terms related specifically to ai</rdfs:comment>
     <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/ENVO_09200001"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
-  </owl:Class>
+    <rdf:type rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
+  </rdf:Description>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/temperature_water">
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/temperature_water">
   <rdfs:comment>Temperature terms related specifically to wate</rdfs:comment>
     <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/ENVO_09200014"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
-  </owl:Class>
+    <rdf:type rdf:resource="https://w3id.org/def/temp_ont/SemanticDomain"/>
+  </rdf:Description>
 
 <!-- # An important distinction is whether a temperature term is domain CENTRAL or domain PERIPHERAL -->
 <owl:ObjectProperty rdf:about="https://w3id.org/def/temp_ont/hasTemperatureSystemCentralityValue">
@@ -124,15 +134,15 @@
   <rdfs:comment>Central terms or peripheral terms</rdfs:comment>
   </owl:Class>
 
-<owl:Class rdf:about="https://w3id.org/def/temp_ont/TemperatureSystemCentral">
+<rdf:Description  rdf:about="https://w3id.org/def/temp_ont/TemperatureSystemCentral">
   <rdfs:comment>Central terms</rdfs:comment>
-  <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/TemperatureSystemValue"/>
-  </owl:Class>
+  <rdf:type rdf:resource="https://w3id.org/def/temp_ont/TemperatureSystemValue"/>
+  </rdf:Description >
   
-<owl:Class rdf:about="https://w3id.org/def/temp_ont/TemperatureSystemPeripheral">
+<rdf:Description  rdf:about="https://w3id.org/def/temp_ont/TemperatureSystemPeripheral">
   <rdfs:comment>Peripheral terms</rdfs:comment>
-  <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/TemperatureSystemValue"/>
-  </owl:Class>
+  <rdf:type rdf:resource="https://w3id.org/def/temp_ont/TemperatureSystemValue"/>
+  </rdf:Description >
 
 
 <!-- # this defines that each ex:TemperatureLexeme has to be part of a temperature 
@@ -183,7 +193,7 @@
 <!--# Defines that ex:TemperatureSystems have morphosyntactic constructions, here only for PersonalFeeling -->
   
  <owl:Class rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction">
-    <rdfs:comment>Defines that ex:TemperatureSystems have morphosyntactic constructions, here only for PersonalFeeling</rdfs:comment>
+  <rdfs:comment>A kind of  morphosyntactic constructions from p 137 in Koptjevskaja-Tamm, M. (2022). Semantic maps and temperature: Capturing the lexicon-grammar interface across languages. Zeitschrift für Sprachwissenschaft, 41(1), 125-177. https://doi.org/10.1515/zfs-2021-2042</rdfs:comment>
   </owl:Class>
   
 
@@ -191,34 +201,38 @@
     <rdfs:domain rdf:resource="https://w3id.org/def/temp_ont/TemperatureSystem"/>
     <rdfs:range rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
   </owl:ObjectProperty>
+  
+<owl:DatatypeProperty rdf:about="https://w3id.org/def/temp_ont/hasPersFeelingConstructionExplanation">
+    <rdfs:domain rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
 
 <!--# Defines different kinds of  morphosyntactic constructions from p 137 on Koptjevskaja-Tamm, M. (2022). Semantic maps and temperature: Capturing the lexicon-grammar interface across languages. Zeitschrift für Sprachwissenschaft, 41(1), 125-177. https://doi.org/10.1515/zfs-2021-2042 -->
 
   <!-- Defines the PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented resource -->
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented">
-    <rdfs:comment>Defines different kinds of  morphosyntactic constructions from p 137 in Koptjevskaja-Tamm, M. (2022). Semantic maps and temperature: Capturing the lexicon-grammar interface across languages. Zeitschrift für Sprachwissenschaft, 41(1), 125-177. https://doi.org/10.1515/zfs-2021-2042</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
-  </owl:Class>
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_ExpertumOriented">
+    <rdf:type rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
+  </rdf:Description>
   
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_NonOriented">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
-  </owl:Class>
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction_IntransitiveStrategy_NonOriented">
+    <rdf:type  rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
+  </rdf:Description>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
-  </owl:Class>
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExperiencerOriented">
+    <rdf:type  rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
+  </rdf:Description>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
-  </owl:Class>
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_ExpertumOriented">
+    <rdf:type  rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
+  </rdf:Description>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_NonOriented">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
-  </owl:Class>
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction_TransitiveStrategy_NonOriented">
+    <rdf:type  rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
+  </rdf:Description>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction_Other">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
-  </owl:Class>
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/PersFeelingConstruction_Other">
+    <rdf:type  rdf:resource="https://w3id.org/def/temp_ont/PersFeelingConstruction"/>
+  </rdf:Description>
 <!--  # A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a
 # neutral scale (e.g. "lukewarm"). -->
 
@@ -232,20 +246,20 @@
     <rdfs:comment>A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth">
-    <rdfs:comment>A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/TemperatureScaleType"/>
-  </owl:Class>
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/TemperatureScaleTypeWarmth">
+    <rdfs:comment>A warm temperature scale type</rdfs:comment>
+    <rdf:type rdf:resource="https://w3id.org/def/temp_ont/TemperatureScaleType"/>
+  </rdf:Description>
 
-  <owl:Class rdf:about="https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness">
-    <rdfs:comment>A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/TemperatureScaleType"/>
-  </owl:Class>
+  <rdf:Description rdf:about="https://w3id.org/def/temp_ont/TemperatureScaleTypeColdness">
+    <rdfs:comment>A cold temperature scale type </rdfs:comment>
+    <rdf:type rdf:resource="https://w3id.org/def/temp_ont/TemperatureScaleType"/>
+  </rdf:Description>
   
-<owl:Class rdf:about="https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral">
-    <rdfs:comment>A TemperatureLexeme can belong either to a hot scale or to a cold scale or to a # neutral scale (e.g. lukewarm)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/TemperatureScaleType" />
-</owl:Class>
+<rdf:Description rdf:about="https://w3id.org/def/temp_ont/TemperatureScaleTypeNeutral">
+    <rdfs:comment>A neutral temperature scale type (e.g. lukewarm)</rdfs:comment>
+    <rdf:type rdf:resource="https://w3id.org/def/temp_ont/TemperatureScaleType" />
+</rdf:Description>
 
 <!-- # A TemperatureLexeme also have relative temperatures to each other.
 # Note that the inverse relationship means we do not at first have to 
@@ -322,13 +336,6 @@
     <rdfs:comment>Examples of temperature terms in use. Examples are languages objects, and can thus be the Subjects of the hasLanguage property</rdfs:comment>
 	<rdfs:subClassOf rdf:resource="https://w3id.org/def/temp_ont/LanguageObject"/>
   </owl:Class>
-
-  <owl:DatatypeProperty rdf:about="https://w3id.org/def/temp_ont/hasExampleID">
-    <rdfs:comment>Examples should have unique ids, composed by the temperature system id plus an additional unique number</rdfs:comment>
-    <rdfs:domain rdf:resource="https://w3id.org/def/temp_ont/Example"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-
 
 <!-- # Each example has a translation into our business language, which is English. -->
 
@@ -429,35 +436,30 @@
   </rdf:Description>
 
   <ns0:Example rdf:about="https://w3id.org/def/temp_ont/eng_Example1">
-    <ns0:hasExampleID>eng_example1</ns0:hasExampleID>
     <ns0:hasExampleText>It's very hot outside.</ns0:hasExampleText>
     <ns0:containsWord rdf:resource="https://w3id.org/def/temp_ont/lex_tempsys_eng_01_02"/>
     <ns0:hasLanguage rdf:resource="http://dbpedia.org/resource/English"/>
   </ns0:Example>
 
   <ns0:Example rdf:about="https://w3id.org/def/temp_ont/eng_Example2">
-    <ns0:hasExampleID>eng_example2</ns0:hasExampleID>
     <ns0:hasExampleText>The water is warm.</ns0:hasExampleText>
     <ns0:containsWord rdf:resource="https://w3id.org/def/temp_ont/lex_tempsys_eng_01_01"/>
     <ns0:hasLanguage rdf:resource="http://dbpedia.org/resource/English"/>
   </ns0:Example>
 
   <ns0:Example rdf:about="https://w3id.org/def/temp_ont/eng_Example3">
-    <ns0:hasExampleID>eng_example3</ns0:hasExampleID>
     <ns0:hasExampleText>The tea is lukewarm.</ns0:hasExampleText>
     <ns0:containsWord rdf:resource="https://w3id.org/def/temp_ont/lex_tempsys_eng_01_03"/>
     <ns0:hasLanguage rdf:resource="http://dbpedia.org/resource/English"/>
   </ns0:Example>
 
   <ns0:Example rdf:about="https://w3id.org/def/temp_ont/eng_Example4">
-    <ns0:hasExampleID>eng_example4</ns0:hasExampleID>
     <ns0:hasExampleText>The weather is cool.</ns0:hasExampleText>
     <ns0:containsWord rdf:resource="https://w3id.org/def/temp_ont/lex_tempsys_eng_01_04"/>
     <ns0:hasLanguage rdf:resource="http://dbpedia.org/resource/English"/>
   </ns0:Example>
 
   <ns0:Example rdf:about="https://w3id.org/def/temp_ont/eng_Example5">
-    <ns0:hasExampleID>eng_example5</ns0:hasExampleID>
     <ns0:hasExampleText>It's freezing cold outside.</ns0:hasExampleText>
     <ns0:containsWord rdf:resource="https://w3id.org/def/temp_ont/lex_tempsys_eng_01_05"/>
     <ns0:hasLanguage rdf:resource="http://dbpedia.org/resource/English"/>
@@ -547,7 +549,6 @@
   </rdf:Description>
 
   <ns0:Example rdf:about="https://w3id.org/def/temp_ont/swe_Example1">
-    <ns0:hasExampleID>swe_example1</ns0:hasExampleID>
     <ns0:hasExampleText>Vattenkokaren är het när jag rör vid den</ns0:hasExampleText>
     <ns0:hasEnglishTranslation>The kettle is hot when I touch it.</ns0:hasEnglishTranslation>
     <ns0:containsWord rdf:resource="https://w3id.org/def/temp_ont/lex_tempsys_swe_01_01"/>
@@ -555,7 +556,6 @@
   </ns0:Example>
 
   <ns0:Example rdf:about="https://w3id.org/def/temp_ont/swe_Example2">
-    <ns0:hasExampleID>swe_example2</ns0:hasExampleID>
     <ns0:hasExampleText>Vattnet är varmt.</ns0:hasExampleText>
     <ns0:hasEnglishTranslation>The water is warm.</ns0:hasEnglishTranslation>
     <ns0:containsWord rdf:resource="https://w3id.org/def/temp_ont/varm"/>
@@ -563,7 +563,6 @@
   </ns0:Example>
 
   <ns0:Example rdf:about="https://w3id.org/def/temp_ont/swe_Example3">
-    <ns0:hasExampleID>swe_example3</ns0:hasExampleID>
     <ns0:hasExampleText>En ljummen potatissallad.</ns0:hasExampleText>
     <ns0:hasEnglishTranslation>A slightly warm potato salad.</ns0:hasEnglishTranslation>
     <ns0:containsWord rdf:resource="https://w3id.org/def/temp_ont/lex_tempsys_swe_01_05"/>
@@ -571,7 +570,6 @@
   </ns0:Example>
 
   <ns0:Example rdf:about="https://w3id.org/def/temp_ont/swe_Example4">
-    <ns0:hasExampleID>swe_example4</ns0:hasExampleID>
     <ns0:hasExampleText>Rummet kändes kyligt.</ns0:hasExampleText>
     <ns0:hasEnglishTranslation>The room felt cool.</ns0:hasEnglishTranslation>
     <ns0:containsWord rdf:resource="https://w3id.org/def/temp_ont/lex_tempsys_swe_01_03"/>
@@ -579,7 +577,6 @@
   </ns0:Example>
 
   <ns0:Example rdf:about="https://w3id.org/def/temp_ont/lex_tempsys_swe_01_04">
-    <ns0:hasExampleID>swe_example5</ns0:hasExampleID>
     <ns0:hasExampleText>En sval bris svalkade oss.</ns0:hasExampleText>
     <ns0:hasEnglishTranslation>A cool, pleasant wind cooled us down.</ns0:hasEnglishTranslation>
     <ns0:containsWord rdf:resource="https://w3id.org/def/temp_ont/sval"/>
@@ -587,7 +584,6 @@
   </ns0:Example>
 
   <ns0:Example rdf:about="https://w3id.org/def/temp_ont/swe_Example6">
-    <ns0:hasExampleID>swe_example6</ns0:hasExampleID>
     <ns0:hasExampleText>Det var kallt ute.</ns0:hasExampleText>
     <ns0:hasEnglishTranslation>It was cold outside.</ns0:hasEnglishTranslation>
     <ns0:containsWord rdf:resource="https://w3id.org/def/temp_ont/lex_tempsys_swe_01_02"/>
