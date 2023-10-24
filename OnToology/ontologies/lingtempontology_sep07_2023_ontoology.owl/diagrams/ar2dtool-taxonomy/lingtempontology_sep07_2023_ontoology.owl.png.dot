@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "ns0:OtherPOS" "ns0:StateVerbPOS" ; /*classes style*/
+	"ns0:OtherPOS" -> "http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech" [ label = "rdfs:subClassOf" ];
+	"ns0:StateVerbPOS" -> "http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech" [ label = "rdfs:subClassOf" ];
+
+}
