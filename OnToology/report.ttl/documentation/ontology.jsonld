@@ -1,0 +1,120 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#ENTRY1698172542893HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP07_2023OWL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://vocab.linkeddata.es/ontology/report#entrySubject" : [ {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP07_2023.OWL"
+  } ],
+  "http://vocab.linkeddata.es/ontology/report#isEntryOfReport" : [ {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#REPORT1698172542893"
+  } ],
+  "http://vocab.linkeddata.es/ontology/report#vocabularyStatus" : [ {
+    "@value" : "http://vocab.linkeddata.es/ontology/report#success"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#Entry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Entry for vocab /home/ahmad/repos/prevclone-H0FM/lingtempontology_sep07_2023.owl"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#ENTRY1698172542893HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP07_2023_ONTOOLOGYOWL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://vocab.linkeddata.es/ontology/report#entrySubject" : [ {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP07_2023_ONTOOLOGY.OWL"
+  } ],
+  "http://vocab.linkeddata.es/ontology/report#isEntryOfReport" : [ {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#REPORT1698172542893"
+  } ],
+  "http://vocab.linkeddata.es/ontology/report#vocabularyStatus" : [ {
+    "@value" : "http://vocab.linkeddata.es/ontology/report#success"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#Entry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Entry for vocab /home/ahmad/repos/prevclone-H0FM/lingtempontology_sep07_2023_ontoology.owl"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#ENTRY1698172542893HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP12_2023_ONTOOLOGYOWL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://vocab.linkeddata.es/ontology/report#entrySubject" : [ {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP12_2023_ONTOOLOGY.OWL"
+  } ],
+  "http://vocab.linkeddata.es/ontology/report#isEntryOfReport" : [ {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#REPORT1698172542893"
+  } ],
+  "http://vocab.linkeddata.es/ontology/report#vocabularyStatus" : [ {
+    "@value" : "http://vocab.linkeddata.es/ontology/report#success"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#Entry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Entry for vocab /home/ahmad/repos/prevclone-H0FM/lingtempontology_sep12_2023_ontoology.owl"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#Entry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#REPORT1698172542893",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://vocab.linkeddata.es/ontology/report#hasEntry" : [ {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#ENTRY1698172542893HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP07_2023OWL"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#ENTRY1698172542893HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP07_2023_ONTOOLOGYOWL"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#ENTRY1698172542893HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP12_2023_ONTOOLOGYOWL"
+  } ],
+  "http://vocab.linkeddata.es/ontology/report#numberVocabsError" : [ {
+    "@value" : "0"
+  } ],
+  "http://vocab.linkeddata.es/ontology/report#numberVocabsOK" : [ {
+    "@value" : "3"
+  } ],
+  "http://vocab.linkeddata.es/ontology/report#numberVocabsWarning" : [ {
+    "@value" : "0"
+  } ],
+  "http://vocab.linkeddata.es/ontology/report#reportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "Tue Oct 24 20:35:42 CEST 2023"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://vocab.linkeddata.es/ontology/report#Report"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Report created on Tue Oct 24 20:35:42 CEST 2023"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#Report",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#entrySubject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#hasEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#isEntryOfReport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#numberVocabsError",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#numberVocabsOK",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#numberVocabsWarning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#reportDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/ontology/report#vocabularyStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+} ]
