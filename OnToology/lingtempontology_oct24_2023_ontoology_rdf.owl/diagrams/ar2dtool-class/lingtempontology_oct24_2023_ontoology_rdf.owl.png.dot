@@ -57,10 +57,10 @@ node [shape = rectangle, color="orange"]; "ns0:Example" "ns0:TemperatureScaleTyp
 	"ns0:lex_tempsys_eng_01_04" -> "ns0:temperature_general" [ label = "ns0:hasSemanticDomain" ];
 	"ns0:lex_tempsys_eng_01_04" -> "dbr:English" [ label = "ns0:hasLanguage" ];
 	"dbr:Francie_Barrett" -> "dbr:" [ label = "dbo:wikiPageWikiLink" ];
+	"NULL" -> "799a80fd:18b63da4c8f:-7ffb" [ label = "owl:oneOf" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
-	"NULL" -> "-1a103545:18b6393ac37:-7ff9" [ label = "rdf:rest" ];
-	"NULL" -> "-1a103545:18b6393ac37:-7ffa" [ label = "rdf:rest" ];
-	"NULL" -> "-1a103545:18b6393ac37:-7ffb" [ label = "owl:oneOf" ];
+	"NULL" -> "799a80fd:18b63da4c8f:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "799a80fd:18b63da4c8f:-7ffa" [ label = "rdf:rest" ];
 	"ns0:eng_Example2" -> "dbr:English" [ label = "ns0:hasLanguage" ];
 	"ns0:eng_Example2" -> "ns0:lex_tempsys_eng_01_01" [ label = "ns0:containsWord" ];
 	"ns0:lex_tempsys_swe_01_05" -> "ns0:TemperatureScaleTypeNeutral" [ label = "ns0:hasTemperatureScaleType" ];
@@ -112,7 +112,7 @@ node [shape = rectangle, color="orange"]; "ns0:Example" "ns0:TemperatureScaleTyp
 	"ns0:Example" -> "ns0:TemperatureLexeme" [ label = "ns0:containsWord" ];
 	"ns0:TemperatureSystem" -> "xsd:boolean" [ label = "ns0:hasWarmHotCollapse" ];
 	"ns0:TemperatureLexeme" -> "ns0:TemperatureSystemValue" [ label = "ns0:hasTemperatureSystemCentralityValue" ];
-	"ns0:TemperatureLexeme" -> "-1a103545:18b6393ac37:-7ffc" [ label = "ns0:hasSemanticBasicnessStatus" ];
+	"ns0:TemperatureLexeme" -> "799a80fd:18b63da4c8f:-7ffc" [ label = "ns0:hasSemanticBasicnessStatus" ];
 	"ns0:TemperatureSystem" -> "ns0:PersFeelingConstruction" [ label = "ns0:hasPersFeelingConstruction" ];
 	"ns0:TemperatureLexeme" -> "ns0:TemperatureLexeme" [ label = "ns0:isMoreColdThan" ];
 
