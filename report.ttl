@@ -3,78 +3,129 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
+<http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
+        a       owl:DatatypeProperty .
+
 <http://vocab.linkeddata.es/ontology/report#entrySubject>
         a       rdf:Property .
 
-<http://vocab.linkeddata.es/ontology/report#hasEntry>
-        a       rdf:Property .
-
-<http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
-        a       owl:DatatypeProperty .
-
-<http://vocab.linkeddata.es/ontology/report#ENTRY1698172542893HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP07_2023OWL>
-        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
-        rdfs:label  "Entry for vocab /home/ahmad/repos/prevclone-H0FM/lingtempontology_sep07_2023.owl" ;
-        <http://vocab.linkeddata.es/ontology/report#entrySubject>
-                <http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP07_2023.OWL> ;
-        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
-                <http://vocab.linkeddata.es/ontology/report#REPORT1698172542893> ;
-        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
-                "http://vocab.linkeddata.es/ontology/report#success" .
+<http://vocab.linkeddata.es/ontology/report#LANGUAGENOTFOUND>
+        a           <http://vocab.linkeddata.es/ontology/report#Warning> ;
+        rdfs:label  "Warning: A language was not recognized in vocabulary" .
 
 <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
         a       rdf:Property .
 
-<http://vocab.linkeddata.es/ontology/report#numberVocabsError>
-        a       owl:DatatypeProperty .
+rdfs:label  a   owl:DatatypeProperty .
 
 <http://vocab.linkeddata.es/ontology/report#reportDate>
         a       owl:DatatypeProperty .
 
-<http://vocab.linkeddata.es/ontology/report#REPORT1698172542893>
-        a           <http://vocab.linkeddata.es/ontology/report#Report> ;
-        rdfs:label  "Report created on Tue Oct 24 20:35:42 CEST 2023" ;
-        <http://vocab.linkeddata.es/ontology/report#hasEntry>
-                <http://vocab.linkeddata.es/ontology/report#ENTRY1698172542893HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP07_2023_ONTOOLOGYOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1698172542893HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP07_2023OWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1698172542893HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP12_2023_ONTOOLOGYOWL> ;
-        <http://vocab.linkeddata.es/ontology/report#numberVocabsError>
-                "0" ;
-        <http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
-                "3" ;
-        <http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
-                "0" ;
-        <http://vocab.linkeddata.es/ontology/report#reportDate>
-                "Tue Oct 24 20:35:42 CEST 2023"^^xsd:dateTime .
+<http://vocab.linkeddata.es/ontology/report#ENTRY1698423276487HOMEAHMADREPOSPREVCLONE-ZXENONTOLOGIESLINGTEMPONTOLOGY_SEP07_2023_ONTOOLOGYOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab /home/ahmad/repos/prevclone-ZxEN/ontologies/lingtempontology_sep07_2023_ontoology.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-ZXENONTOLOGIESLINGTEMPONTOLOGY_SEP07_2023_ONTOOLOGY.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1698423276487> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#success" .
 
 <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
         a       rdf:Property .
 
-<http://vocab.linkeddata.es/ontology/report#ENTRY1698172542893HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP12_2023_ONTOOLOGYOWL>
-        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
-        rdfs:label  "Entry for vocab /home/ahmad/repos/prevclone-H0FM/lingtempontology_sep12_2023_ontoology.owl" ;
-        <http://vocab.linkeddata.es/ontology/report#entrySubject>
-                <http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP12_2023_ONTOOLOGY.OWL> ;
-        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
-                <http://vocab.linkeddata.es/ontology/report#REPORT1698172542893> ;
-        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
-                "http://vocab.linkeddata.es/ontology/report#success" .
-
-<http://vocab.linkeddata.es/ontology/report#Entry>
+<http://vocab.linkeddata.es/ontology/report#Error>
         a       owl:Class .
 
-<http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
-        a       owl:DatatypeProperty .
+<http://vocab.linkeddata.es/ontology/report#ENTRY1698423276487HOMEAHMADREPOSPREVCLONE-ZXENONTOLOGIESLINGTEMPONTOLOGY_SEP12_2023_ONTOOLOGYOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab /home/ahmad/repos/prevclone-ZxEN/ontologies/lingtempontology_sep12_2023_ontoology.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-ZXENONTOLOGIESLINGTEMPONTOLOGY_SEP12_2023_ONTOOLOGY.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1698423276487> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#success" .
 
 <http://vocab.linkeddata.es/ontology/report#Report>
         a       owl:Class .
 
-<http://vocab.linkeddata.es/ontology/report#ENTRY1698172542893HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP07_2023_ONTOOLOGYOWL>
+<http://vocab.linkeddata.es/ontology/report#ENTRY1698423276487HOMEAHMADREPOSPREVCLONE-ZXENLINGTEMPONTOLOGY_OCT24_2023_ONTOOLOGY_RDFXML>
         a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
-        rdfs:label  "Entry for vocab /home/ahmad/repos/prevclone-H0FM/lingtempontology_sep07_2023_ontoology.owl" ;
+        rdfs:label  "Entry for vocab /home/ahmad/repos/prevclone-ZxEN/lingtempontology_oct24_2023_ontoology_rdf.xml" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#LANGUAGENOTFOUND> ;
         <http://vocab.linkeddata.es/ontology/report#entrySubject>
-                <http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-H0FMLINGTEMPONTOLOGY_SEP07_2023_ONTOOLOGY.OWL> ;
+                <http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-ZXENLINGTEMPONTOLOGY_OCT24_2023_ONTOOLOGY_RDF.XML> ;
         <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
-                <http://vocab.linkeddata.es/ontology/report#REPORT1698172542893> ;
+                <http://vocab.linkeddata.es/ontology/report#REPORT1698423276487> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#warning" , "http://vocab.linkeddata.es/ontology/report#success" .
+
+<http://vocab.linkeddata.es/ontology/report#GENERICERROR>
+        a           <http://vocab.linkeddata.es/ontology/report#Error> ;
+        rdfs:label  "Error: the vocabulary could not be loaded or processed" .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1698423276487HOMEAHMADREPOSPREVCLONE-ZXENLINGTEMPONTOLOGY_OCT24_2023_ONTOOLOGY_RDFOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab /home/ahmad/repos/prevclone-ZxEN/lingtempontology_oct24_2023_ontoology_rdf.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-ZXENLINGTEMPONTOLOGY_OCT24_2023_ONTOOLOGY_RDF.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1698423276487> ;
         <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
                 "http://vocab.linkeddata.es/ontology/report#success" .
 
-rdfs:label  a   owl:DatatypeProperty .
+<http://vocab.linkeddata.es/ontology/report#ENTRY1698423276487REPORTTTL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab report.ttl" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#REPORT.TTL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1698423276487> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1698423276487HOMEAHMADREPOSPREVCLONE-ZXENONTOLOGIESLINGTEMPONTOLOGY_SEP07_2023OWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab /home/ahmad/repos/prevclone-ZxEN/ontologies/lingtempontology_sep07_2023.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-ZXENONTOLOGIESLINGTEMPONTOLOGY_SEP07_2023.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1698423276487> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#success" .
+
+<http://vocab.linkeddata.es/ontology/report#numberVocabsError>
+        a       owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
+        a       owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#Warning>
+        a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#Entry>
+        a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#hasEntry>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#detectedProblem>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#REPORT1698423276487>
+        a           <http://vocab.linkeddata.es/ontology/report#Report> ;
+        rdfs:label  "Report created on Fri Oct 27 18:14:36 CEST 2023" ;
+        <http://vocab.linkeddata.es/ontology/report#hasEntry>
+                <http://vocab.linkeddata.es/ontology/report#ENTRY1698423276487HOMEAHMADREPOSPREVCLONE-ZXENONTOLOGIESLINGTEMPONTOLOGY_SEP07_2023_ONTOOLOGYOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1698423276487REPORTTTL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1698423276487HOMEAHMADREPOSPREVCLONE-ZXENONTOLOGIESLINGTEMPONTOLOGY_SEP07_2023OWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1698423276487HOMEAHMADREPOSPREVCLONE-ZXENONTOLOGIESLINGTEMPONTOLOGY_SEP12_2023_ONTOOLOGYOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1698423276487HOMEAHMADREPOSPREVCLONE-ZXENLINGTEMPONTOLOGY_OCT24_2023_ONTOOLOGY_RDFOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1698423276487HOMEAHMADREPOSPREVCLONE-ZXENLINGTEMPONTOLOGY_OCT24_2023_ONTOOLOGY_RDFXML> ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsError>
+                "1" ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
+                "5" ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
+                "1" ;
+        <http://vocab.linkeddata.es/ontology/report#reportDate>
+                "Fri Oct 27 18:14:36 CEST 2023"^^xsd:dateTime .
